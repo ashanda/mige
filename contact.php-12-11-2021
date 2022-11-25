@@ -1,0 +1,188 @@
+<?php include('header.php'); ?>
+  <!--/Menu-->
+<style type="text/css">
+div#main
+{
+	padding-top:85px !important;
+}
+div#google_translate_element {
+    display: none;
+}
+@media (max-width: 768px){
+div#main {
+    padding-top: 62px !important;
+}
+p.contact-information {
+    margin-bottom:30px;
+}
+}
+@media (min-width:768px) and (max-width:992px)
+{
+p.contact-information {
+    font-size: 16px;
+}
+}
+</style>
+  <!--About-->
+<section class="banner" id="about-box">
+	<div class="container">
+		<h2><?php echo $translation['_contact_Title_'];?></h2>
+	</div>
+</section>
+<section class="addresses">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<p class="contact-information">
+					<?php echo $translation['_Wettingen_title_'];?><br>
+					<?php echo $translation['_Landstrasse_20_title_'];?><br>
+					<?php echo $translation['_5430_Wettingen_title_'];?><br>
+					E-mail: <a href="mailto:info@fahrschule-star.ch" class="highlight"><strong><?php echo $translation['_info@fahrschule-star._title_'];?></strong></a><br/>
+					<?php echo $translation['_4156_title_'];?> <strong><a href="tel:056 611 99 77">056 611 99 77</a></strong>
+				</p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<p class="contact-information">
+					<?php echo $translation['_Hauptlin_Ducati_title_'];?><br>
+					<?php echo $translation['_Rösslimattstrasse_title_'];?><br>
+					<?php echo $translation['_Buchs_title_'];?><br>
+					E-mail: <a href="mailto:info@fahrschule-star.ch" class="highlight"><strong><?php echo $translation['_info@fahrschule-star._title_'];?></strong></a><br/>
+					<?php echo $translation['_telephone_title_'];?> <strong><a href="tel:056 611 99 77">056 611 99 77</a></strong><br/>
+				</p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<p class="contact-information">
+					<?php echo $translation['_Zurich_title_'];?>Zürich<br>
+					<?php echo $translation['_Schiffbaustrasse_title_'];?><br><?php echo $translation['_005zurich_title_'];?>
+					<br>
+					E-mail: <a href="mailto:info@fahrschule-star.ch" class="highlight"><strong><?php echo $translation['_info@fahrschule-star._title_'];?></strong></a><br/>
+					<?php echo $translation['_telephone_title_'];?> <strong><a href="tel:044 611 99 77">044 611 99 77</a></strong><br/>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+ <section class="contact-info">
+      <div class="row no-margin row-same-height">     
+  		<div class="col-md-12 no-padding col-full-height">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.0643738595736!2d8.316525915503064!3d47.469174979175726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47906cd100bcd627%3A0xd76602dda1ba1c1b!2sLandstrasse%2020%2C%205430%20Wettingen%2C%20Switzerland!5e0!3m2!1sen!2sin!4v1592831974614!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+       </div>  
+      </div>
+  </section> 
+	<section class="contact-form" id="contact-sec">
+		<div class="container">	
+		  <div class="row no-margin animatedParent">
+			<div class="col-md-5 col-sm-12 animated bounceInLeft slow">
+				<!--Contact text wrapper-->
+				<div class="contact-text-wrapper">
+					<!--Contact text-->
+					<div class="text contact-text">
+						<h2><?php echo $translation['_contact_Title_'];?></h2>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Excepteur sint occaecat.<br/><br/></p>
+						<p class="contact-information">
+							E-mail: <a href="mailto:info@fahrschule-star.ch" class="highlight"><strong><?php echo $translation['_info@fahrschule-star._title_'];?></strong></a><br/>
+							<?php echo $translation['_telephone_title_'];?><strong><a href="tel:056 611 99 77">056 611 99 77</a></strong><br/>
+							<?php echo $translation['_web_title_'];?> <a href="fahrschule-star.ch" class="highlight"><strong>fahrschule-star.ch</strong></a>
+						</p>
+					</div>
+					<!--/Contact text-->
+				</div>
+				<!--/Contact text wrapper-->                                 
+			</div>
+			
+			<div class="col-md-7 col-sm-12 animated bounceInRight slow">
+				<!-- Contact form -->
+				<div class="form">
+					<form id="contactform" method="POST" action="GetPhpData.php">
+					   <div class="row">
+						<div class="col-md-6 no-padding">
+							<div class="col-md-12">
+							  <input id="name" class="subfont" type="text" placeholder="<?php echo $translation['_Name_title_'];?>" name="name">
+							</div>
+							<div class="col-md-12">
+							  <input id="email" class="subfont" type="email" placeholder="<?php echo $translation['_email_title_'];?>" name="email">
+							</div>
+							<div class="col-md-12">
+							  <input id="subject" class="subfont" type="text" placeholder="<?php echo $translation['_email_title_'];?>Subject" name="subject">
+							</div>
+							<div class="col-md-12">
+							  <input id="phone" class="subfont" type="number" placeholder="<?php echo $translation['_Phone_Number_Title_'];?>" name="phone">
+							  <input id="type" class="subfont" type="hidden" value="contactus" placeholder="<?php echo $translation['_Phone_Number_Title_'];?>" name="type">
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<textarea id="message" class="subfont form-control" placeholder="<?php echo $translation['_Message_Title_'];?>" cols="40" name="message"></textarea>
+						</div>               
+					   </div>
+					   
+					   <div class="row">                
+						<div class="col-md-12 col-xs-12">
+						  <button id="contactus_submit" class="btn dark pull-right"><span><?php echo $translation['_Send_messages_title_'];?></span> <span class="icon-arrow"></span></button>
+						</div>
+					   </div>
+					   
+					   <div class="row">                
+						<div class="col-md-12 col-xs-12">
+						  <div class="notification"><span class="highlight"><i class="fa fa-check-circle"></i> </span></div>
+						</div>
+					   </div>                                  
+				   </form>
+			   </div>
+			</div>
+		  </div>
+	  </div>
+  </section> 
+        
+</div>
+<!-- /Main content -->
+
+
+<!--Footer-->
+<?php include('footer.php'); ?>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+	$("#contactform").validate({
+	rules:{
+		name:"required",
+		subject:"required",
+		message:"required",
+		email:{email: true,required: true},
+		phone:{required : true,minlength:10},
+
+	},
+
+	messages: {
+		name:"Please fill name",
+		subject:"Please fill subject",
+		message:"Please fill message",
+		email:{email:"Enter Valid Email!",
+			required:"Enter Email!"
+			},
+		phone:{minlength:"Please enter Valid Mobile No.",
+			required:"Please enter Mobile No."
+			},
+	},
+
+	submitHandler: function(form){
+		$.ajax({
+			url: form.action,
+			type: form.method,
+			data: $(form).serialize(),
+			dataType: "JSON",
+			success: function(response) {
+				$('.notification span').text(response.message);
+				$('.notification').css('color',response.color);
+				$('.notification').css('display','block');
+				
+				form.reset();
+			},
+			error: function (jqXHR, textStatus, errorThrown)
+	        {
+	        	alert('Error while sending mail');
+	        }            
+      	});		
+	}
+});
+</script>

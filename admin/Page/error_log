@@ -1,0 +1,1 @@
+[22-Oct-2021 10:59:02 UTC] PHP Fatal error:  Cannot redeclare get_all_user() (previously declared in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Page/index.php:10) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 565

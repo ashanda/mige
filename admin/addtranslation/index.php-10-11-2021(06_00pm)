@@ -1,0 +1,2979 @@
+
+<style type="text/css">
+    form#form-three {
+    background-color: #fff;
+}
+
+form#form-two {
+    background-color: #fff;
+}
+form#form-one {
+    background-color: #fff;
+}
+
+form#form-three .form-row {
+    margin-right: 15px;
+}
+form#form-two .form-row {
+    margin-right: 15px;
+}
+form#form-three .form-row {
+    margin-right: 15px;
+}
+div#showHide-4 {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+div#showHide-5 {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+div#showHide-6 {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+</style>
+<?php
+include '../includes/header.php';
+
+$value = $_GET['url'];
+
+$value2 = $_GET['url_page'];
+
+//print_r($value2);
+
+
+if($value2 =='Login'){
+	
+	
+	$query = "SELECT * FROM page_content_translation WHERE selected_page='Login'"; 
+
+
+//print_r($query); die;
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+print_r($alias);
+
+
+}
+$welcome = $alias[0];
+$desc = $alias[1];
+$registration = $alias[2];
+$contact = $alias[3];
+$more = $alias[4];
+$image = $alias[5];
+$signup_email_title = $alias[6];
+$signup_form_title = $alias[7];
+
+
+$welcome_inenglish = $inenglish[0];
+$desc_inenglish = $inenglish[1];
+$reg_inenglish = $inenglish[2];
+$contact_inenglish = $inenglish[3];
+$more_inenglish = $inenglish[4];
+$image_inenglish = $inenglish[5];
+$signup_email_title_inenglish = $inenglish[6];
+$signup_form_title_inenglish = $inenglish[7];
+
+$welcome_ingerman = $ingerman[0];
+$desc_ingerman = $ingerman[1];
+$reg_ingerman = $ingerman[2];
+$contact_ingerman = $ingerman[3];
+$more_ingerman = $ingerman[4];
+$image_ingerman = $ingerman[5];
+$signup_email_title_ingerman = $ingerman[6];
+$signup_form_title_ingerman = $ingerman[7];
+
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+
+ 
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ 
+
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+	
+}
+elseif($value2 =='Vku_page'){
+	
+		
+	$query = "SELECT * FROM page_content_translation WHERE selected_page='Vku_page'"; 
+
+
+//print_r($query); die;
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+//print_r($alias);
+
+
+}
+$Vku_desc_heading = $alias[0];
+$Course_Part_1 = $alias[1];
+$Danger_theory = $alias[2];
+$Functions_of_the_sensory_organs = $alias[3];
+$Course_Part_2 = $alias[4];
+$Partner_customer = $alias[5];
+$Street_customer = $alias[6];
+$weather = $alias[7];
+$Times = $alias[8];
+$Course_Part_3 = $alias[9];
+$Condition_of_the_vehicle = $alias[10];
+$Forces_when_driving = $alias[11];
+$Traffic_movement_theory = $alias[12];
+$Course_Part_4 = $alias[13];
+$Driveability = $alias[14];
+$Environmentally_conscious = $alias[15];
+$driving = $alias[16];
+$Traffic_Studies = $alias[17];
+$desc = $alias[18];
+
+
+
+$Vku_desc_heading_inenglish = $inenglish[0];
+$Course_Part_1_inenglish = $inenglish[1];
+$Danger_theory_inenglish = $inenglish[2];
+$Functions_of_the_sensory_organs_inenglish = $inenglish[3];
+$Course_Part_2_inenglish = $inenglish[4];
+$Partner_customer_inenglish = $inenglish[5];
+$Street_customer_inenglish = $inenglish[6];
+$weather_inenglish = $inenglish[7];
+$Times_inenglish = $inenglish[8];
+$Course_Part_3_inenglish = $inenglish[9];
+$Condition_of_the_vehicle_inenglish = $inenglish[10];
+$Forces_when_driving_inenglish = $inenglish[11];
+$Traffic_movement_theory_inenglish = $inenglish[12];
+$Course_Part_4_inenglish = $inenglish[13];
+$Driveability_inenglish = $inenglish[14];
+$Environmentally_conscious_inenglish = $inenglish[15];
+$driving_inenglish = $inenglish[16];
+$Traffic_Studies_inenglish = $inenglish[17];
+$desc_inenglish = $inenglish[18];
+
+
+
+
+$Vku_desc_heading_ingerman = $ingerman[0];
+$Course_Part_1_ingerman = $ingerman[1];
+$Danger_theory_ingerman = $ingerman[2];
+$Functions_of_the_sensory_organs_ingerman = $ingerman[3];
+$Course_Part_2_ingerman = $ingerman[4];
+$Partner_customer_ingerman = $ingerman[5];
+$Street_customer_ingerman = $ingerman[6];
+$weather_ingerman = $ingerman[7];
+$Times_ingerman = $ingerman[8];
+$Course_Part_3_ingerman = $ingerman[9];
+$Condition_of_the_vehicle_ingerman = $ingerman[10];
+$Forces_when_driving_ingerman = $ingerman[11];
+$Traffic_movement_theory_ingerman = $ingerman[12];
+$Course_Part_4_ingerman = $ingerman[13];
+$Driveability_ingerman = $ingerman[14];
+$Environmentally_conscious_ingerman = $ingerman[15];
+$driving_ingerman = $ingerman[16];
+$Traffic_Studies_ingerman = $ingerman[17];
+$desc_ingerman = $ingerman[18];
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+
+ 
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ 
+
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+	
+}
+elseif($value2 =='first_aid_page'){
+	
+		
+	$query = "SELECT * FROM page_content_translation WHERE selected_page='first_aid_page'";
+
+
+//print_r($query); die;
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+//print_r($alias);
+//print_r($inenglish);
+
+
+}
+$firstaid_banner_title = $alias[0];
+$Easily_Online_Title = $alias[1];
+$easily_online_title = $alias[2];
+$Banner_title = $alias[3];
+$Banner_desc = $alias[4];
+$Image_below_desc = $alias[5];
+
+
+
+
+$firstaid_banner_title_inenglish = $inenglish[0];
+$Easily_Online_Title_inenglish = $inenglish[1];
+$easily_online_title_inenglish = $inenglish[2];
+$Banner_title_inenglish = $inenglish[3];
+$Banner_desc_inenglish = $inenglish[4];
+$Image_below_desc_inenglish = $inenglish[5];
+
+
+
+
+
+$firstaid_banner_title_ingerman = $ingerman[0];
+$Easily_Online_Title_ingerman = $ingerman[1];
+$easily_online_title_ingerman = $ingerman[2];
+$Banner_title_ingerman = $ingerman[3];
+$Banner_desc_ingerman = $ingerman[4];
+$Image_below_desc_ingerman = $ingerman[5];
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+
+ 
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ 
+
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+	
+}
+
+
+
+
+
+
+
+
+if($value =='home'){
+
+ $query = "SELECT * FROM page_content_translation WHERE selected_page='home'"; 
+
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+
+}
+$welcome = $alias[0];
+$desc = $alias[1];
+$registration = $alias[2];
+$contact = $alias[3];
+$more = $alias[4];
+$image = $alias[5];
+
+
+$welcome_inenglish = $inenglish[0];
+$desc_inenglish = $inenglish[1];
+$reg_inenglish = $inenglish[2];
+$contact_inenglish = $inenglish[3];
+$more_inenglish = $inenglish[4];
+$image_inenglish = $inenglish[5];
+
+$welcome_ingerman = $ingerman[0];
+$desc_ingerman = $ingerman[1];
+$reg_ingerman = $ingerman[2];
+$contact_ingerman = $ingerman[3];
+$more_ingerman = $ingerman[4];
+$image_ingerman = $ingerman[5];
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+ 
+ if($image){
+      $img_value=$image . uniqid().'.jpg';
+  }
+ // print_r($img_value); die;
+
+ if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_dir.$img_value)){  
+       
+   $update_image =  "UPDATE page_content_translation set inenglish='$img_value',ingerman='$img_value' WHERE alias='Home_background_image'";
+//var_dump($update_image); 
+mysqli_query($conn,$update_image);
+ 
+   }else{
+     
+            $statusMsg = "Sorry, there was an error uploading your file.";
+        }
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ 
+
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+
+}
+elseif($value =='drive'){
+  
+    $query = "SELECT * FROM page_content_translation WHERE selected_page='drive'"; 
+
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+
+}
+$welcome = $alias[0];
+$desc = $alias[1];
+$registration = $alias[2];
+$contact = $alias[3];
+$more = $alias[4];
+$image = $alias[5];
+$welcome_inenglish = $inenglish[0];
+$desc_inenglish = $inenglish[1];
+$reg_inenglish = $inenglish[2];
+$contact_inenglish = $inenglish[3];
+$more_inenglish = $inenglish[4];
+$image_inenglish = $inenglish[5];
+
+$welcome_ingerman = $ingerman[0];
+$desc_ingerman = $ingerman[1];
+$reg_ingerman = $ingerman[2];
+$contact_ingerman = $ingerman[3];
+$more_ingerman = $ingerman[4];
+$image_ingerman = $ingerman[5];
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  //print_r($alias_name); die;
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+ 
+ if($image){
+      $img_value=$image . uniqid().'.jpg';
+  }
+ // print_r($img_value); die;
+
+
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ if($update_alias=="Drive_background_image")
+ {
+ if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_dir.$img_value)){  
+       
+	 
+   $update =  "UPDATE page_content_translation set inenglish='$img_value',ingerman='$img_value' WHERE alias='Drive_background_image'";
+ 
+   }else{
+     
+            $statusMsg = "Sorry, there was an error uploading your file.";
+        }	 
+
+//var_dump($update_image); die;
+//$a = mysqli_query($conn,$update_image);	 
+ }
+else{
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+}
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+}
+
+
+/* For First Aid Section */
+
+elseif($value =='firstaid'){
+    
+    $query = "SELECT * FROM page_content_translation WHERE selected_page='firstaid'"; 
+
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+
+}
+$welcome = $alias[0];
+$desc = $alias[1];
+$registration = $alias[2];
+$contact = $alias[3];
+$more = $alias[4];
+$image = $alias[5];
+$welcome_inenglish = $inenglish[0];
+$desc_inenglish = $inenglish[1];
+$reg_inenglish = $inenglish[2];
+$contact_inenglish = $inenglish[3];
+$more_inenglish = $inenglish[4];
+$image_inenglish = $inenglish[5];
+
+$welcome_ingerman = $ingerman[0];
+$desc_ingerman = $ingerman[1];
+$reg_ingerman = $ingerman[2];
+$contact_ingerman = $ingerman[3];
+$more_ingerman = $ingerman[4];
+$image_ingerman = $ingerman[5];
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  //print_r($alias_name); die;
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+ 
+ if($image){
+      $img_value=$image . uniqid().'.jpg';
+  }
+ // print_r($img_value); die;
+
+
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ if($update_alias=="Firstaid_background_image")
+ {
+ if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_dir.$img_value)){  
+       
+	 
+   $update =  "UPDATE page_content_translation set inenglish='$img_value',ingerman='$img_value' WHERE alias='Firstaid_background_image'";
+ 
+   }else{
+     
+            $statusMsg = "Sorry, there was an error uploading your file.";
+        }	 
+
+//var_dump($update_image); die;
+//$a = mysqli_query($conn,$update_image);	 
+ }
+else{
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+}
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+    
+}
+elseif($value =='vku'){
+  $query = "SELECT * FROM page_content_translation WHERE selected_page='vku'"; 
+
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+
+}
+$welcome = $alias[0];
+$desc = $alias[1];
+$registration = $alias[2];
+$contact = $alias[3];
+$more = $alias[4];
+$image = $alias[5];
+$welcome_inenglish = $inenglish[0];
+$desc_inenglish = $inenglish[1];
+$reg_inenglish = $inenglish[2];
+$contact_inenglish = $inenglish[3];
+$more_inenglish = $inenglish[4];
+$image_inenglish = $inenglish[5];
+
+$welcome_ingerman = $ingerman[0];
+$desc_ingerman = $ingerman[1];
+$reg_ingerman = $ingerman[2];
+$contact_ingerman = $ingerman[3];
+$more_ingerman = $ingerman[4];
+$image_ingerman = $ingerman[5];
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  //print_r($alias_name); die;
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+ 
+ if($image){
+      $img_value=$image . uniqid().'.jpg';
+  }
+ // print_r($img_value); die;
+
+
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ if($update_alias=="vku_background_image")
+ {
+ if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_dir.$img_value)){  
+       
+	 
+   $update =  "UPDATE page_content_translation set inenglish='$img_value',ingerman='$img_value' WHERE alias='vku_background_image'";
+ 
+   }else{
+     
+            $statusMsg = "Sorry, there was an error uploading your file.";
+        }	 
+
+//var_dump($update_image); die;
+//$a = mysqli_query($conn,$update_image);	 
+ }
+else{
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+}
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+    
+}
+elseif($value =='moto'){
+  $query = "SELECT * FROM page_content_translation WHERE selected_page='moto'"; 
+
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+
+}
+$welcome = $alias[0];
+$desc = $alias[1];
+$registration = $alias[2];
+$contact = $alias[3];
+$more = $alias[4];
+$image = $alias[5];
+$welcome_inenglish = $inenglish[0];
+$desc_inenglish = $inenglish[1];
+$reg_inenglish = $inenglish[2];
+$contact_inenglish = $inenglish[3];
+$more_inenglish = $inenglish[4];
+$image_inenglish = $inenglish[5];
+
+$welcome_ingerman = $ingerman[0];
+$desc_ingerman = $ingerman[1];
+$reg_ingerman = $ingerman[2];
+$contact_ingerman = $ingerman[3];
+$more_ingerman = $ingerman[4];
+$image_ingerman = $ingerman[5];
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  //print_r($alias_name); die;
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+ 
+ if($image){
+      $img_value=$image . uniqid().'.jpg';
+  }
+ // print_r($img_value); die;
+
+
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ if($update_alias=="Moto_background_image")
+ {
+ if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_dir.$img_value)){  
+       
+	 
+   $update =  "UPDATE page_content_translation set inenglish='$img_value',ingerman='$img_value' WHERE alias='Moto_background_image'";
+ 
+   }else{
+     
+            $statusMsg = "Sorry, there was an error uploading your file.";
+        }	 
+
+//var_dump($update_image); die;
+//$a = mysqli_query($conn,$update_image);	 
+ }
+else{
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+}
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+   
+	
+	
+}
+elseif($value =='price'){
+	
+	
+	 $query = "SELECT * FROM page_content_translation WHERE selected_page='price'"; 
+
+
+ $run=mysqli_query($conn,$query);
+ 
+ //$row = mysqli_fetch_assoc($run);
+ while ($row = mysqli_fetch_assoc($run))
+{
+ 
+ $result[] = $row;
+$alias = array_column($result, 'alias');
+$inenglish = array_column($result, 'inenglish');
+$ingerman = array_column($result, 'ingerman');
+
+
+}
+$welcome = $alias[0];
+$desc = $alias[1];
+$registration = $alias[2];
+$contact = $alias[3];
+$more = $alias[4];
+$image = $alias[5];
+
+
+
+$welcome_inenglish = $inenglish[0];
+$desc_inenglish = $inenglish[1];
+$reg_inenglish = $inenglish[2];
+$contact_inenglish = $inenglish[3];
+$more_inenglish = $inenglish[4];
+$image_inenglish = $inenglish[5];
+
+$welcome_ingerman = $ingerman[0];
+$desc_ingerman = $ingerman[1];
+$reg_ingerman = $ingerman[2];
+$contact_ingerman = $ingerman[3];
+$more_ingerman = $ingerman[4];
+$image_ingerman = $ingerman[5];
+
+
+
+
+if(isset($_POST['submit']))
+{
+    
+
+ //   print_r($_POST);die;
+  $alias_name = $_POST['alias_name'];
+  //print_r($alias_name); die;
+  $inenglish = $_POST['inenglish'];
+  $ingerman = $_POST['ingerman'];
+  $count = count($_POST['alias_name']);
+  
+  
+  $image = $_FILES['image']['name'];
+    $target_dir='images/';
+    $targetFilePath = $target_dir . basename($_FILES['image']['name']);
+$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+ $allowTypes = array('jpg','png','jpeg','gif','pdf');
+ 
+ if($image){
+      $img_value=$image . uniqid().'.jpg';
+  }
+ // print_r($img_value); die;
+
+
+     
+  for($i=0;$i<$count;$i++){
+      $update_inenglish=$inenglish[$i];
+       $update_ingerman=$ingerman[$i];
+       $update_alias=$alias_name[$i];
+
+ if($update_alias=="Price_background_image")
+ {
+ if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_dir.$img_value)){  
+       
+	 
+   $update =  "UPDATE page_content_translation set inenglish='$img_value',ingerman='$img_value' WHERE alias='Price_background_image'";
+ 
+   }else{
+     
+            $statusMsg = "Sorry, there was an error uploading your file.";
+        }	 
+
+//var_dump($update_image); die;
+//$a = mysqli_query($conn,$update_image);	 
+ }
+else{
+ $update =  "UPDATE page_content_translation set inenglish='$update_inenglish',ingerman='$update_ingerman' WHERE alias='$update_alias'";
+  echo "<script>window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php';</script>";
+}
+ 
+ if ($conn->query($update) === TRUE) {
+}
+
+
+
+  } //for loop end
+  
+
+  
+
+}
+	
+	
+}
+else{
+	
+}
+
+
+
+?>
+<style type="text/css">
+    .act{
+            /*border: 0;*/
+    /*background: 0 0;*/
+    border-bottom: 3px solid #da3732 !important ;
+    }
+    #icon {
+  margin: 0 0 10px;
+}
+
+.chosen-container {
+  text-align: left; // overrides body text-align
+}
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.6.0/js-yaml.min.js"></script>
+<div class="page has-sidebar-left  height-full">
+    <header class="blue accent-3 relative">
+        <div class="container-fluid text-white">
+            <div class="row p-t-b-10 ">
+              
+            </div>
+            <div class="row justify-content-between">
+                <ul class="nav nav-material nav-material-white responsive-tab" id="v-pills-tab" role="tablist">
+                  
+                    <li>
+                        <a class="nav-link act "  href="#" ><i class="icon icon-plus-circle"></i> Add Translation</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid animatedParent animateOnce">
+        <div class="animated fadeInUpShort">
+            <div class="row my-3">
+                <div class="col-md-8  offset-md-2 ">
+                  
+                        <div class="card no-b  no-r">
+                            <div class="card-body">
+                             
+                                
+                             <div class="form-row">
+                                    <div class="col-md-10 ml-3">
+                                        <div class="form-group m-0">
+                                            <form action="index.php" method="GET">
+                                                  <label for="" class="col-form-label s-12" onchange="this.form.submit()">Select Page</label>
+                                           <select id="select_page" name="url_page" class="form-control r-0 light s-12">
+                                                <option value="">--Please choose an option--</option>
+												<option id="" <?php if($value2=='home_page'){echo 'selected';}?> value="home_page">Home</option>
+                                           <!--   <option id="" <?php if($value2=='first_aid_page'){echo 'selected';}?> value="first_aid_page">First Aid</option>  -->
+                                              <!--  <option id="" <?php if($value2=='Vku_page'){echo 'selected';}?> value="Vku_page">VKU</option> -->
+                                              <!--  <option id="" value="Moto">MOTO</option> -->
+                                             <!--   <option id="" value="Pricing">Pricing</option> -->
+                                              <!--  <option id="" value="About_us">About Us</option> -->
+                                              <!--  <option id="" value="Registation_page">Registration</option>  -->
+                                              <!--  <option id="" value="Process">Process</option> -->
+                                               <!-- <option id="" value="Contact_us">Contact Us</option> -->
+                                             <!--   <option id="" value="Trial_page">Request Trial Page</option>  -->
+                                             <!--    <option id="" <?php if($value2=='Login'){echo 'selected';}?> value="Login">Login</option>  -->
+                                                
+                                                
+                                                
+                                           </select>
+										   <section id="section_select">
+                                            <label for="" class="col-form-label s-12">Select Section</label>
+                                           <select id="select" name="url" class="form-control r-0 light s-12" onchange="this.form.submit()">
+                                                <option value="">--Please choose an option--</option>
+                                                <option id="" <?php if($value=='home'){echo 'selected';}?> value="home">Home</option>
+                                                <option id="" <?php if($value=='drive'){echo 'selected';}?> value="drive">Drive</option>
+												<option id="" <?php if($value=='firstaid'){echo 'selected';}?> value="firstaid">First Aid</option>
+												<option id="" <?php if($value=='vku'){echo 'selected';}?> value="vku">VKU</option>
+												<option id="" <?php if($value=='moto'){echo 'selected';}?> value="moto">MOTO</option>
+												<option id="" <?php if($value=='price'){echo 'selected';}?> value="price">Price</option>
+												price
+                                           </select>
+                                           </form>
+                                             <div id="icon"></div>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                           <!-- Title 1 Row -->
+						     <div class="showHideForm" id="showHide-1">
+                                  <form id="form-one" action="" method="POST" enctype="multipart/form-data">
+								
+                          <div class="form-row" >
+                                                 <div class="form-group col-1 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $welcome;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $welcome_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $welcome_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $desc;?>">
+                                                    
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $registration;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $reg_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $reg_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $contact;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $contact_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $contact_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $more;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $more_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $more_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $image;?>">
+                                            </div>
+                                            
+                                            <!-- <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $image_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $image_ingerman;?>">
+                                            </div> -->
+                                                    
+                                            </div> 
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div>
+                                                  <div class="card-body">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+								</div>
+								</div>
+								
+                    </form>     
+                    </div> 
+						     <div class="showHideForm" id="showHide-2">
+                                <form id="form-two" action="" method="POST" enctype="multipart/form-data">
+													   
+                                             <div class="form-row" >
+                                                 <div class="form-group col-1 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $welcome;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $welcome_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $welcome_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $desc;?>">
+                                                    
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $registration;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $reg_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $reg_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $contact;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $contact_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $contact_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $more;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $more_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $more_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $image;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $image_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $image_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div>
+                                                  <div class="card-body">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+								</div>
+								</div>
+                        
+									</form>  
+									
+								</div>
+
+
+
+
+
+						     <div class="showHideForm" id="showHide-3">
+							<form id="form-three" action="" method="POST" enctype="multipart/form-data">
+                                             <div class="form-row" >
+                                                 <div class="form-group col-1 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $welcome;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $welcome_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $welcome_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $desc;?>">
+                                                    
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $registration;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $reg_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $reg_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $contact;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $contact_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $contact_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $more;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $more_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $more_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $image;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $image_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $image_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div>
+                                                  <div class="card-body">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+								</div>
+								</div>
+								</form> 
+                        </div> 
+					   
+					
+			      <div class="col-md-10 showHideForm" id="showHide-4">
+					<form id="form-four" action="" method="POST" enctype="multipart/form-data">
+                                             <div class="form-row" >
+                                                 <div class="form-group col-1 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $welcome;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $welcome_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $welcome_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $desc;?>">
+                                                    
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $registration;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $reg_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $reg_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $contact;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $contact_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $contact_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $more;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $more_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $more_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $image;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $image_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $image_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div>
+                                                  <div class="card-body">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+								</div>
+								</div>
+                                          
+					
+                    </form> 
+					
+					 </div> 
+					
+						
+						     <div class="showHideForm col-md-10" id="showHide-5">
+					
+								<form id="form-five" action="" method="POST" enctype="multipart/form-data">
+                                              <div class="form-row" >
+                                                 <div class="form-group col-1 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $welcome;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $welcome_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $welcome_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $desc;?>">
+                                                    
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $registration;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $reg_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $reg_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $contact;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $contact_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $contact_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $more;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $more_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $more_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $image;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $image_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $image_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div>
+                                                  <div class="card-body">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+								</div>
+								</div>
+							</form>
+                        </div> 
+					
+					
+					
+					
+					
+					
+					
+						     <div class="showHideForm col-md-10" id="showHide-6">
+										<form id="form-six" action="" method="POST" enctype="multipart/form-data">
+                                             <div class="form-row" >
+                                                 <div class="form-group col-1 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $welcome;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $welcome_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $welcome_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $desc;?>">
+                                                    
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Short Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $registration;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $reg_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $reg_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $contact;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $contact_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $contact_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $more;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $more_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Button3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $more_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-1 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $image;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $image_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-5 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Content In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $image_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div>
+                                                  <div class="card-body">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+								</div>
+								</div>
+													
+								</form>
+                        </div> 
+                    
+					</div>
+</section>
+
+
+<div class="container-fluid animatedParent animateOnce">
+        <div class="animated fadeInUpShort go">
+            <div class="row my-3">
+                <div class="col-md-8  offset-md-2 ">
+                  
+                        <div class="card no-b  no-r">
+                            <div id="login_card" class="card-body">
+                             
+                                
+                             <div class="form-row">
+                                    <div class="col-md-10 ml-3">
+                                        <div class="form-group m-0">
+										
+						     <div class="showHideForm" id="showHide-7">
+                                    <form id="Login_form" action="" method="POST" enctype="multipart/form-data">
+                                             <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $welcome;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Login Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $welcome_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Login Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $welcome_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $desc;?>">
+                                                    
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Username Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Username Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $registration;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Password Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $reg_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Password Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $reg_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $contact;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Forgot Password Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $contact_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Forgot Password Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $contact_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $more;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Button Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $more_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Button Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $more_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $image;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $image_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $image_ingerman;?>">
+                                            </div>
+											
+											<div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $signup_email_title;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Email Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $signup_email_title_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Email Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $signup_email_title_ingerman;?>">
+                                            </div>
+											
+											
+											   <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $signup_form_title_;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $signup_form_title_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Signup Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $signup_form_title_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div> 
+                                           <!--  <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div> -->
+                                                  
+                        </div> <div class="card-body">
+                                <button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+                            </div>
+                    </form>
+					</div>
+					
+					
+					
+					<!-- VKU Page Form -->
+					
+					
+						     <div class="showHideForm" id="showHide-8">
+					                                    <form id="Vku_form" action="" method="POST" enctype="multipart/form-data">
+                                             <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Vku_desc_heading;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Descprition Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Vku_desc_heading_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Descprition Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Vku_desc_heading_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $Course_Part_1;?>">
+                                                    
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 1 Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Course_Part_1_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 1 Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Course_Part_1_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Danger_theory;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 1 card 1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Danger_theory_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 1 card 1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Danger_theory_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Functions_of_the_sensory_organs;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 1 card 2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Functions_of_the_sensory_organs_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 1 card 2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Functions_of_the_sensory_organs_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Course_Part_2;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Course_Part_2_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Course_Part_2_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Partner_customer;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Partner_customer_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Partner_customer_ingerman;?>">
+                                            </div>
+											
+											<div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Street_customer;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Street_customer_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Street_customer_ingerman;?>">
+                                            </div>
+											
+											
+											   <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $weather;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $weather_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $weather_ingerman;?>">
+                                            </div>
+										
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Times;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 4 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Times_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 2 card 4 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Times_ingerman;?>">
+                                            </div>
+											
+											
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Course_Part_3;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Course_Part_3_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Course_Part_3_ingerman;?>">
+                                            </div>
+											
+										
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Condition_of_the_vehicle;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 card 1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Condition_of_the_vehicle_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 card 1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Condition_of_the_vehicle_ingerman;?>">
+                                            </div>
+											
+											
+									
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Forces_when_driving;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 card 2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Forces_when_driving_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 card 2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Forces_when_driving_ingerman;?>">
+                                            </div>
+											
+											
+											<div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Traffic_movement_theory;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 card 3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Traffic_movement_theory_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 3 card 3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Traffic_movement_theory_ingerman;?>">
+                                            </div>
+											
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Course_Part_4;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Course_Part_4_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Course_Part_4_ingerman;?>">
+                                            </div>
+											
+											
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Driveability;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 card 1 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Driveability_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 card 1 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Driveability_ingerman;?>">
+                                            </div>
+											
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Environmentally_conscious;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 card 2 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Environmentally_conscious_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 card 2 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Environmentally_conscious_ingerman;?>">
+                                            </div>
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $driving;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 card 3 In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $driving_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Course 4 card 3 In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $driving_ingerman;?>">
+                                            </div>
+                                                    
+													
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Traffic_Studies;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Banner Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Traffic_Studies_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Banner Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Traffic_Studies_ingerman;?>">
+                                            </div>
+											
+											
+											
+											 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $desc;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Description In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $desc_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Description In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $desc_ingerman;?>">
+                                            </div>	
+
+
+											
+													
+                                            </div>
+                                           <!--  <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div> -->
+                                                  
+										</div> 
+						                <div class="card-body">
+											<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+										</div>
+                    </form>
+					</div>
+					
+					
+					
+					  <div class="showHideForm" id="showHide-9">
+					                                    <form id="firstaid_page_form" action="" method="POST" enctype="multipart/form-data">
+                                             <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                             <!--    <label for="dob" class="col-form-label s-12">Title Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $firstaid_banner_title;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                               <label for="dob" class="col-form-label s-12">Banner Heading In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $firstaid_banner_title_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Banner Heading In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $firstaid_banner_title_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                                <!-- Short Description 1 Row -->
+                                                <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Short Description Alias Name</label>  -->
+                                               
+                                            </div>
+                                             <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]"  value="<?php  echo $Easily_Online_Title;?>">
+                                                    
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Footer Heading In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Easily_Online_Title_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Footer Heading In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Easily_Online_Title_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                            <!-- Button 1 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button1 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $easily_online_title_;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Footer Short Desc title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $easily_online_title_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Footer Short Desc title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $easily_online_title_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 2 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Button2 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Banner_title;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Main Title In English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value="<?php  echo $Banner_title_inenglish;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Main Title In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value="<?php  echo $Banner_title_ingerman;?>">
+                                            </div>
+                                                    
+                                            </div>
+                                            
+                                              <!-- Button 3 Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                  <!--   <label for="dob" class="col-form-label s-12">Button3 Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Banner_desc;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Banner Desc In English</label>
+                                                <textarea rows="5" cols="90" class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value=""><?php  echo $Banner_desc_inenglish;?></textarea>
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Banner Desc In German</label>
+                                                <textarea rows="5" cols="90" class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value=""><?php  echo $Banner_desc_ingerman;?></textarea>
+                                            </div>
+                                                    
+                                            </div> 
+                                            
+                                            
+                                              <!-- Image Row -->
+                                            <div class="form-row">
+                                                 <div class="form-group col-4 mb-3">
+                                                 <!--    <label for="dob" class="col-form-label s-12">Image Alias Name</label>  -->
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="hidden" name="alias_name[]" value="<?php  echo $Image_below_desc;?>">
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Section Desc In English</label>
+                                                <textarea rows="5" cols="90"  class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="inenglish[]" value=""><?php  echo $Image_below_desc_inenglish;?></textarea>
+                                            </div>
+                                            
+                                             <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Section Desc In German</label>
+                                                <textarea rows="5" cols="90" class="form-control r-0 light s-12 datePicker" placeholder="" data-time-picker="false"
+                                                    type="text" name="ingerman[]" value=""><?php  echo $Image_below_desc_ingerman;?></textarea>
+                                            </div>
+											
+											
+                                             <div class="card-body">
+											<button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+										</div>
+
+
+
+											
+													
+                                            </div>
+                                           <!--  <div class="form-group col-4 mb-3">
+                                                <label for="dob" class="col-form-label s-12">Image Upload</label>
+                                               <input type="file" class="form-control"  name="image" id="photo"  style="width: 382px">
+                                            </div> -->
+                                                  
+										</div> 
+						               
+                    </form>
+					
+					
+					
+					
+					</div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                    
+                                            </div>
+                                           <!-- class="fa-select"  -->
+                                           <!--  <input name="class_icon" placeholder="Enter icon class" class="form-control r-0 light s-12 " type="text" required=""> -->
+                                      
+                                  
+                            
+                                 <!-- <div class="form-row"> -->
+                                  <!-- <div class="col-md-3 offset-md-1">
+                                        <input hidden id="file" name="class_icon"/>
+                                        <div class="dropzone dropzone-file-area pt-4 pb-4" id="fileUpload" style="margin-top: -76px;padding:0px;">
+                                            <div class="dz-default dz-message">
+                                                <span>Drop A passport size icon of category</span>
+                                                 <div>You can click to open file browser</div> -->
+                                            <!-- </div>
+                                        </div>
+                                    </div> -- -->
+                                     <!-- </div> -->
+
+                            </div>
+                            <hr>
+                            <span style="color: red;" id="error"><?php if(isset($error)) { echo $error;}?></span>
+                         
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php
+include '../includes/footer.php';
+?>
+
+
+<script>
+
+ $("#section_select").show(); 
+						  
+						  
+				$('#select_page').on('change', function () {  
+				 var url_page = $(this).val(); 
+			// alert(url_page);
+			if(url_page=='home_page'){ 
+			
+			$("#section_select").show();
+      // bind change event to select
+      $('#select').on('change', function () {
+              
+    
+          
+          var url = $(this).val(); 
+		  console.log(url);
+
+          
+       //   var newurl ='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php?url='+url;
+			var newurl ='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php?url_page=home_page&url='+url;
+
+			window.history.pushState({ path: newurl }, '', newurl);
+
+
+        //   window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php?url='+url;
+
+		  
+		  
+		
+          
+		});
+			}
+			else if(url_page=='first_aid_page'){ 
+			
+			$("#section_select").hide();
+			
+			
+      // bind change event to select
+    
+              
+    
+          
+          var url = $(this).val(); 
+		  console.log(url);
+
+          
+       //   var newurl ='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php?url='+url;
+			var newurl ='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php?url_page=first_aid_page;
+
+			window.history.pushState({ path: newurl }, '', newurl);
+
+
+        //   window.location.href='https://www.dharmani.com/FahrschuleStarWebSite/admin/addtranslation/index.php?url='+url;
+
+		  
+		  
+		
+          
+		
+			}
+			
+			});
+
+	$('.showHideForm').hide();
+</script>
+
+<?php if($_GET['url_page']=='' && $_GET['url']==''){ ?>
+<script>
+	$('#showHide-1').hide(); $('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide();
+</script>
+<?php } ?>
+
+<?php if($_GET['url_page']=='home_page' && $_GET['url']=='home'){ ?>
+<script>
+	$('#showHide-1').show(); $('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide(); 
+</script>
+<?php } ?>
+
+
+<?php if($_GET['url_page']=='home_page' && $_GET['url']=='drive'){ ?>
+<script>
+	$('#showHide-2').show();
+	$('#showHide-1').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide();
+</script>
+<?php } ?>
+
+
+<?php if($_GET['url_page']=='home_page' && $_GET['url']=='firstaid'){ ?>
+<script>
+	$('#showHide-3').show();
+	$('#showHide-2').hide(); $('#showHide-1').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide(); 	
+</script>
+<?php } ?>
+
+
+<?php if($_GET['url_page']=='home_page' && $_GET['url']=='vku'){ ?>
+<script>
+	$('#showHide-4').show();
+	$('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-1').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide();
+</script>
+<?php } ?>
+
+
+<?php if($_GET['url_page']=='home_page' && $_GET['url']=='moto'){ ?>
+<script>
+	$('#showHide-5').show();
+	$('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-1').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide();
+</script>
+<?php } ?>
+
+
+<?php if($_GET['url_page']=='home_page' && $_GET['url']=='price'){ ?>
+<script>
+	$('#showHide-6').show();
+	$('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-1').hide();
+	$('#showHide-7').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide();
+</script>
+<?php } ?>
+
+
+<?php if($_GET['url_page']=='Login' ){ ?>
+<script>
+	$('#showHide-7').show();
+	$('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-1').hide();
+	$('#showHide-8').hide(); $('#showHide-9').hide();
+</script>
+<?php } ?>
+
+
+
+<?php if($_GET['url_page']=='Vku_page' ){ ?>
+<script>
+	$('#showHide-8').show();
+	$('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-1').hide(); $('#showHide-9').hide();
+</script>
+<?php } ?>
+
+
+<?php if($_GET['url_page']=='first_aid_page' ){ ?>
+<script>
+	$('#showHide-9').show();
+	$('#showHide-2').hide(); $('#showHide-3').hide(); $('#showHide-4').hide(); $('#showHide-5').hide(); $('#showHide-6').hide();
+	$('#showHide-7').hide();
+	$('#showHide-1').hide(); $('#showHide-8').hide();
+</script>
+<?php } ?>
+
+

@@ -1,0 +1,265 @@
+<?php
+include '../includes/header.php';
+
+
+
+
+
+function get_category_image_base_64($image)
+{
+   $dir='CategoryImage/';
+
+    if(!is_dir($dir))
+    {
+     mkdir( 'CategoryImage/',0777,true);
+    }
+
+    $image_name = uniqid().'_'.time().'.png';
+
+    $image   = str_replace('data:image/png;base64,', '', $image); 
+    $image   = str_replace(' ', '+', $image);
+    $data  = base64_decode($image);
+    $file  = 'CategoryImage/'.$image_name;
+    $success = file_put_contents($file, $data);
+    return $success ? $image_name : 'some problem occured';
+}
+
+function add_category_part_name_new($category_id,$name,$creation_at,$part_no,$parts_name_ingerman)
+{
+  global $conn;
+  // $q['query'] = "INSERT into tbl_part_name(category_id,name,creation_at,part_no)VALUES('$category_id','$name','$creation_at','$part_no')";
+
+ $q['query'] =  "INSERT INTO `tbl_part_name`(`category_id`, `name`, `part_no`, `creation_at`, `parts_name_ingerman`) VALUES ('$category_id','$name','$part_no','$creation_at','$parts_name_ingerman')";
+  $q['run'] = $conn->query($q['query']);
+  return $q['run'];
+}
+
+if(isset($_POST['submit']))
+{
+    //var_dump($_POST); 
+    $name = $_POST['name'];
+    $no_of_parts = $_POST['no_of_parts'];
+    $creation_time = time();
+    $class_icon=$_POST['class_icon'];
+    $part_name=$_POST['part_name'];
+     $part_no=$_POST['part_no'];
+     $alias=$_POST['alias_name'];
+     $german=$_POST['name_ingerman'];
+     $alias_name=$_POST['alias_name_parts'];
+     $parts_german=$_POST['parts_name_ingerman'];
+    // var_dump($_POST);die();
+    // $a=explode(';base64,', $class_icon); 
+    // if ($class_icon != "")
+    // {
+    // $class_icon = get_category_image_base_64($a[1]);
+ 
+    // $update_image = $class_icon;
+    // }
+    $check_category_existance = check_category_existance('',$name);
+    //var_dump($check_category_existance);
+    $category_name = strtolower($check_category_existance['name']);
+    if($category_name==strtolower($name))
+
+    {
+        $error = 'This Category Name Is Already Exists';
+    }
+    else
+    {
+    
+        $class_name="fa ".$class_icon;
+       $add_subcategory="INSERT INTO `tbl_category`(`name`, `class_icon`, `no_of_parts`, `creation_time`,`alias_name`, `name_ingerman`)VALUES('$name','$class_name','$no_of_parts','$creation_time','$alias','$german')";
+       $result=$conn->query($add_subcategory);
+
+       
+        $category_id= $conn->insert_id;    
+        if($category_id)
+
+        {
+            $q['query'] = "UPDATE `tbl_category` SET `alias_name`='_category_".$category_id."' WHERE category_id =$category_id";
+      
+       $q['run'] = $conn->query($q['query']);
+         // return $q['run'];
+
+         foreach ($part_name as $key => $value) {
+           $part_no_val=$part_no[$key];
+           $creation_at=time();
+           $parts_german_val=$parts_german[$key];
+          
+           // add_category_part_name($category_id,$name,$part_no,$creation_at,$alias_inname,$parts_ingerman);
+           // add_category_part_namess($category_id,$name,$part_no,$creation_at,$alias_inname,$parts_ingerman);
+            add_category_part_name_new($category_id,$value,$creation_at,$part_no_val,$parts_german_val);
+           $part_id=$conn->insert_id;
+           $q['query'] = "UPDATE `tbl_part_name` SET `alias_name_parts`='_category_".$category_id."_parts_".$part_no_val."_' WHERE id =$part_id";
+           $q['run'] = $conn->query($q['query']);
+        }
+    
+            echo "<script>window.location.href='index.php';</script>";
+         exit();
+        }
+        else
+        {
+             $error = 'There is someting wrong while adding new category';
+        }
+    }
+}
+?>
+<style type="text/css">
+    .act{
+            /*border: 0;*/
+    /*background: 0 0;*/
+    border-bottom: 3px solid #da3732 !important ;
+    }
+    #icon {
+  margin: 0 0 10px;
+}
+
+.chosen-container {
+  text-align: left; // overrides body text-align
+}
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.6.0/js-yaml.min.js"></script>
+<div class="page has-sidebar-left  height-full">
+    <header class="blue accent-3 relative">
+        <div class="container-fluid text-white">
+            <div class="row p-t-b-10 ">
+                <div class="col">
+                    <h4>
+                        <i class="icon-apps"></i>
+                        Course Category
+                    </h4>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <ul class="nav nav-material nav-material-white responsive-tab" id="v-pills-tab" role="tablist">
+                    <li>
+                        <a class="nav-link"  href="index.php"><i class="icon icon-home2"></i>All Categories</a>
+                    </li>
+                    <li>
+                        <a class="nav-link act "  href="#" ><i class="icon icon-plus-circle"></i> Add New Course Category</a>
+                    </li>
+                    <li>
+                        <a class="nav-link"  href="AddSubCategory.php" ><i class="icon icon-plus-circle"></i> Add New Sub Course Category</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid animatedParent animateOnce">
+        <div class="animated fadeInUpShort">
+            <div class="row my-3">
+                <div class="col-md-8  offset-md-2 ">
+                    <form action="" method="POST">
+                        <div class="card no-b  no-r">
+                            <div class="card-body">
+                                <div class="form-row mt-4">
+                                            <div class="form-group">
+
+</div>
+                                             <div class="form-group col-4 ml-3 mb-3">
+                                                <label for="dob" class="col-form-label s-12 ml-1">Course Category Name in English</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="Enter Text Please" data-time-picker="false"
+                                                    type="text" name="name">
+
+                                                    
+                                            </div>
+                                            <div class="col-md-4 ml-3">
+                                    <label for="dob" class="col-form-label s-12 ml-1">Course Category Name In German</label>
+                                                <input class="form-control r-0 light s-12 datePicker" placeholder="Enter Text Please" data-time-picker="false"
+                                                    type="text" name="name_ingerman">
+                                </div>
+                                        </div>
+                                <div class="form-row">
+                                    <div class="col-md-10 ml-3">
+                                        <div class="form-group m-0">
+                                            <label for="no_of_parts" class="col-form-label s-12">Number Of Parts</label>
+                                            <input name="no_of_parts" placeholder="Enter Number Of Parts Here" class="form-control r-0 light s-12 " type="number"  id="no_of_parts" required type="number" min="1">
+                                        </div>
+
+                                    </div> 
+</div>
+                                <div id='PartS'></div>
+                                <div class="form-row">
+                                    <div class="col-md-10 ml-3">
+                                        <div class="form-group m-0">
+                                            <label for="class_icon" class="col-form-label s-12">Icon</label>
+                                           <select id="select" name="class_icon" class="form-control r-0 light s-12 "></select>
+                                             <div id="icon"></div>
+                                           <!-- class="fa-select"  -->
+                                           <!--  <input name="class_icon" placeholder="Enter icon class" class="form-control r-0 light s-12 " type="text" required=""> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- <div class="form-row"> -->
+                                  <!-- <div class="col-md-3 offset-md-1">
+                                        <input hidden id="file" name="class_icon"/>
+                                        <div class="dropzone dropzone-file-area pt-4 pb-4" id="fileUpload" style="margin-top: -76px;padding:0px;">
+                                            <div class="dz-default dz-message">
+                                                <span>Drop A passport size icon of category</span>
+                                                 <div>You can click to open file browser</div> -->
+                                            <!-- </div>
+                                        </div>
+                                    </div> -- -->
+                                     <!-- </div> -->
+
+                            </div>
+                            <hr>
+                            <span style="color: red;" id="error"><?php if(isset($error)) { echo $error;}?></span>
+                            <div class="card-body">
+                                <button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="icon-save mr-2"></i>Save Data</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php
+include '../includes/footer.php';
+?>
+<script type="text/javascript">
+    $("input").click(function() {
+        $('#error').css("display", "none");
+    });
+</script>
+<script type="text/javascript">
+    $.get('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/fa-4/src/icons.yml', function(data) {
+  var parsedYaml = jsyaml.load(data);
+    $.each(parsedYaml.icons, function(index, icon){
+    $('#select').append('<option value="fa-' + icon.id + '">' + icon.id + '</option>');
+  });
+  
+  $("#select").chosen({
+    enable_split_word_search: true,
+        search_contains: true 
+  });
+    $("#icon").html('<i class="fa fa-2x ' + $('#select').val() + '"></i>');
+});
+
+/* Detect any change of option*/
+$("#select").change(function(){
+  var icono = $(this).val();
+  // alert(icono);
+    $("#icon").html('<i class="icon icon-' + icono + '"></i>');
+});
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#no_of_parts').on('keyup change',function(){
+          var no_of_parts=$(this).val();
+          $('#PartS').empty();
+          for (var i = 0; i < no_of_parts; i++) {
+              console.log(i);
+              var a=i+1;
+                 // $('#PartS').empty();
+              $('#PartS').append('<div id="PartS"><div class="col-md-10 form-row"><div class></div><div class="col-md-4"><label for="name" class="col-form-label s-12">Part '+a+' Name In English</label><input name="part_name[]" placeholder="Enter Part '+a+' Name" class="form-control r-0 light s-12 " type="text" required=""></div><div class="col-md-4"><label for="name" class="col-form-label s-12">Part '+a+' Name In German</label><input name="parts_name_ingerman[]" placeholder="Enter Part '+a+' Name" class="form-control r-0 light s-12 " type="text" required=""><input type="hidden" name="part_no[]" value="1"></div></div></div>')
+
+
+          } 
+
+        });
+    });
+</script>

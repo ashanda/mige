@@ -1,0 +1,427 @@
+<?php
+include 'header.php';
+include 'Functions.php';
+$user_id = $_SESSION['user_id'];
+?>  
+  <!--Contact info-->
+  <section class="contact-info">
+      <div class="row no-margin">  
+            
+  		<div class="col-md-12 no-padding">
+           <div class="register-image"><h2><?php echo $translation['_Cash_Register_']?></h2></div>
+        </div>  
+      </div>
+  </section> 
+  <!--/Contact info-->
+
+  <!--Contact form-->
+  <section class="contact-form" id="billing-page">
+	<div class="container">
+      <div class="row">
+  		<div class="col-md-12 col-sm-12 no-padding animatedParent">
+            <!--Contact text wrapper-->
+        	<div class="contact-text-wrapper" style="padding:90px; padding-bottom:0px;" id="rgster">
+				<div class="sign-options-booking" id="first_form">
+					<p class="top-sign-op open-sign"><?php echo $translation['_alady_help_']?> <a href="#"><?php echo $translation['_sign_click_']?></a></p>
+					<form id="login_form" method="POST">
+						<div class="sign-in-pop">
+							<p><?php echo $translation['_already_shopped_ ']?></p>
+							<div class="form-group">
+								<label><?php echo $translation['_user_email_']?></label>
+								<input type="text" class="form-control" id="user_email" name="email" required>
+							</div>
+							<div class="form-group">
+								<label><?php echo $translation['_password_title_']?></label>
+								<input type="password" class="form-control" id="user_password" name="password" required>
+							</div>
+							<input type="hidden" class="form-control" name="type" value="Login" />
+							<div class="bottom-buttons sign-in-btns-forms">
+								<button type="submit" id="login_button" class="btns back-button"><?php echo $translation['_Anmelden_']?></button> <!-- <input type="checkbox" style="margin-right:10px;">  <b>Remain signed in</b>  -->
+							</div>
+							<!-- <a href="#"><b>Forgot Password?</b></a> -->
+						</div>
+					</form>
+					<!-- <p class="top-sign-op open-voucher">Do you have a voucher? <a href="#">Click here to enter your voucher code.</a></p>
+					<div class="voucher">
+						<p>If you have a coupon code, please use it below.</p>
+						<div class="form-group">
+							<input type="text" class="form-control" name="username" id="username" autocomplete="username">
+						</div>
+						<div class="bottom-buttons sign-in-btns-forms">
+							<a href="#" class="btns back-button">Apply Voucher</a> 
+						</div>
+					</div> -->
+				</div>
+				<form id="booking-form" action="GetPhpData.php" method="POST">
+					<div id="booking-page-fl">
+						<div class="animated bounceInRight slow">
+							<h4><?php echo $translation['_Billing_Details_']?></h4>
+							<div class="booking-details">
+								<div class="book-det for0-m">
+									<div class="form-group">
+										<h5><?php echo $translation['_First_name_']?><span>*</span> </h5>
+										<p><input class="form-control" type="text" name="firstname" id="firstname" required></p>
+									</div>
+									<div class="form-group">
+										<h5><?php echo $translation['_Surname_']?> <span>*</span> </h5>
+										<p><input class="form-control" type="text" name="lastname" id="lastname" required></p>
+									</div>
+									<div class="form-group">
+										<h5><?php echo $translation['_Firmenname_']?> </h5>
+										<p><input class="form-control" type="text" name="company_name"></p>
+									</div>
+									<div class="form-group">
+										<h5><?php echo $translation['_Country_']?><span>*</span></h5>
+										<p><input class="form-control" type="text" placeholder="Switzerland" name="country" disabled></p>
+									</div>
+									<div class="form-group">
+										<h5><?php echo $translation['_Postleitzahl_']?> <span>*</span> </h5>
+										<p><input class="form-control" type="text" placeholder="" name="postcode" required></p>
+									</div>
+									<div class="form-group">
+										<h5><?php echo $translation['_Phone_title_']?> <span>*</span> </h5>
+										<p><input class="form-control" type="text" placeholder="" id="phone" name="phone" required></p>
+									</div>
+									<div class="form-group w-full">
+										<h5><?php echo $translation['_Street_']?><span>*</span> </h5>
+										<p><input class="form-control" type="text" placeholder="<?php echo $translation['_Stree_house_number_']?>" name="street" required></p>
+									</div>
+									<div class="form-group">
+										<h5><?php echo $translation['_Email_Address_Title_']?> <span>*</span> </h5>
+										<p><input class="form-control" type="email" name="email" id="email" required autocomplete="off"></p>
+										<span id="error"></span>
+									</div>
+									<div class="form-group">
+										<h5><?php echo $translation['_Create_account_passsword_']?> <span>*</span> </h5>
+										<p><input class="form-control" autocomplete="off" type="password" name="password" id="password" required></p>
+									</div>
+								</div>
+
+							</div>
+							<h4><?php echo $translation['_Additional_information_']?> </h4>
+							<div class="booking-details">
+								<div class="book-det for0-m">
+									<div class="form-group w-full">
+										<h5><?php echo $translation['_Hinweise_']?></h5>
+										<p><textarea  class="form-control"  placeholder="<?php echo $translation['_comment_on_your_oder_']?>" class="st-textarea" name="description"></textarea></p>
+									</div>
+								</div>
+
+							</div>
+							<!--div class="bottom-buttons">
+								<a href="#" class="btns back-button" id="back-review">Back</a>
+								<a href="#" class="btns next-button adddisable">Book</a>
+							</div-->
+						</div>
+						
+						<div class="sub-details-cart">
+							<h4><?php echo $translation['_Your_order_is_']?></h4>
+							<table class="table">
+								<thead class="thead-light">
+									<tr>
+										<th class="product-name"><?php echo $translation['_Product_']?></th>
+										<th class="product-total"><?php echo $translation['_Subtotal_']?></th>
+									</tr>
+								</thead>
+								<tbody id="courses">
+								</tbody>
+								<tbody id="total">
+									<tr>
+										<td><b><?php echo $translation['_Subtotal_']?></b></td>
+										<td id="subtotal"></td>
+									</tr>
+									<tr>
+										<td><b><?php echo $translation['_Total2_']?></b></td>
+										<td id="total_amount"></td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- <p><a href="#" style="color:red;">Return to shopping cart</a></p> -->
+							<div class="twint-options">
+								<div class="bar active">
+									<div class="form-group in-r"><input type="radio" name="payment_type" value="cash" class="sel-radio" checked >  <b><?php echo $translation['_Bar_on_site_']?></b></div>
+									<p class="show-on-act"><?php echo $translation['_pyement_in_cash_']?></p>
+								</div>
+								<!-- <div class="twint">
+									<div class="form-group in-r"><input type="radio" name="payment_type" value="twint" class="sel-radio">  <b>Twint</b><img class="twint-img" src="images/twint_logo_q.svg"></div>
+									<p class="show-on-act">Pay with your smartphone</p>
+								</div> -->
+								<div class="twint">
+									<!-- checked -->
+									<div class="form-group in-r"><input type="radio" name="payment_type"  value="stripe" id="checkbox" class="sel-radio" >  <b><?php echo $translation['_Stripe_']?></b><!--img class="twint-img" src="images/twint_logo_q.svg"--></div>
+									<p class="show-on-act"><?php echo $translation['_pay_with_your_']?></p>
+								</div>
+								<p><?php echo $translation['_we_use_your_personal_']?> <a href="#"><?php echo $translation['Datenschutzrichtlinie']?></a>.</p>
+								<div class="inpu-ch">
+									<div class="form-group"><input type="checkbox" required><?php echo $translation['_I_have_the_']?> <a href="#"><?php echo $translation['_terms_and_conditions_']?></a><?php echo $translation['_lesen_']?>*</div>
+								</div>
+								<input type="hidden" name="course_id" id="course_id">
+								<input type="hidden" name="total_price" id="total_price">
+								<input type="hidden" name="signup" id="signup" value="1">
+								<input type="hidden" name="user_id" id="user_id" value="<?php echo $user_id;?>">
+								<input type="hidden" name="type" id="type" value="submit_order">
+								<!-- <input type="hidden" name="transaction_id" value="<?php echo $_REQUEST['tx_id'];?>"> -->
+								<div class="bottom-buttons">
+									<button type="submit" class="btns back-button" value="submit_order"><?php echo $translation['_Bestellung_absenden_']?></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+            </div>
+            <!--/Contact text wrapper-->                                 
+        </div>
+        </div>
+      </div>
+  </section> 
+  <!--Contact form-->
+       
+</div>
+
+<?php include 'footer.php';?>
+<script type="text/javascript">
+
+jQuery(".cate li").click(function(){
+    jQuery(this).addClass("active").siblings().removeClass("active");
+});
+
+$('#email').click(function(){
+	$('#error').css('display','none');
+})
+
+$('#firstname').keypress(function (e) {
+    //var regex = new RegExp("^[a-zA-Z]+$");
+    var regex = new RegExp("^[a-zA-Z ]*$");
+    var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+    if (regex.test(str)) {
+        return true;
+    }
+    else
+    {
+    e.preventDefault();
+    alert('Please Enter Alphabet');
+    return false;
+    }
+});
+//Validate last name as charcater
+$('#lastname').keypress(function (e) {
+    //var regex = new RegExp("^[a-zA-Z]+$");
+    var regex = new RegExp("^[a-zA-Z ]*$");
+    var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+    if (regex.test(str)) {
+        return true;
+    }
+    else
+    {
+    e.preventDefault();
+    alert('Please Enter Alphabet');
+    return false;
+    }
+});
+$(document).ready(function(){
+// 	var tx_id = '<?php echo $_REQUEST['tx_id'];?>';
+// if(tx_id){
+// 	if($('#checkbox').val()=='stripe'){
+// $('#checkbox').prop('checked', true );
+// }
+// }
+
+	var user_id = $('#user_id').val();
+    if(user_id)
+    {
+	    $.ajax({
+	        url : 'GetPhpData.php',
+	        type: "POST",
+	        data: {user_id:user_id,type:'get_user_detail'},
+	        dataType: "JSON",
+	        success: function(data)
+	        {
+	        	console.log(data);
+	            if(data.status==1)
+	            {
+	            	$('#first_form').css('display','none');
+	            	$('#user_email').val(data.data.email);
+	            	$('#email').val(data.data.email);
+	            	$('#user_password').val(data.data.password);
+	            	$('#login_button').addClass('adddisable');
+
+	            	$('#signup').val('0');
+			    	$('#user_id').val(data.data.user_id);
+			    	$('#password').val(data.data.password);
+			    	$("#email").prop("disabled", true);
+			    	$("#password").prop("disabled", true);
+			    	$("#user_email").prop("disabled", true);
+			    	$("#user_password").prop("disabled", true);
+	            }
+	        },
+	        error: function (jqXHR, textStatus, errorThrown)
+	        {
+	        	alert(errorThrown);
+	         // window.location.href = 'login.php';
+	        }
+	    });
+    }
+
+	var course_id = sessionStorage.getItem("final_course_id");
+	$('#course_id').val(course_id);
+	
+	
+	$.ajax({
+		url : 'GetPhpData.php',
+		type: "POST",
+		data: {course_id:course_id,type:'review'},
+		dataType: "JSON",
+		success: function(data)
+		{
+		    if(data.status==1)
+		    {
+				$('tbody#courses').html('');
+				$('td#total_amount, td#subtotal').html('');			
+				$("td#subtotal").append('CHF '+data.total_price);
+				$("td#total_amount").append('<b>CHF'+data.total_price+'</b>');
+				$('#total_price').val(data.total_price);
+
+		    	$.each(data.data, function(key, value) {
+		    		$('tbody#courses').append('<tr><td>'+value.course_detail+' <?php echo $translation['_course_part_']?>  '+value.course_no+'  '+value.course_day+'<?php echo $translation['_course2_']?> | '+value.c_date+' @ '+value.c_time+'-'+value.c_end_time+' | '+value.place+'  × 1</td><td>CHF '+value.price+'</td></tr>');
+		    	});
+		    }
+		},
+		error: function (jqXHR, textStatus, errorThrown)
+		{
+		  window.location.href ='registration-form.php';
+		}
+	});
+});
+
+function submitHandler(){
+	var filter = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+	var signupvalue = $('#signup').val();
+	var email = $('#email').val();
+	var phone = $('#phone').val();
+	if(signupvalue=='1')
+	{
+		$.ajax({
+			url : 'GetPhpData.php',
+			type: "POST",
+			data: {email:email,type:'check_user'},
+			dataType: "JSON",
+			success: function(data)
+			{
+			    if(data.status==1)
+			    {
+			    	$('#email').val('');	
+			    	$('#error').css('color','red');
+			    	$('#error').text(data.message);
+			    	return false;
+			    }
+			    else
+			    {
+			    	if(!phone.match(filter))
+				    {
+				    	alert('Please enter Valid 10 Digit Phone Number');
+				    	$('#phone').focus(); 
+				    }
+				    else 
+				    {
+			    		$("#booking-form").unbind('submit').submit();
+			    	}
+			    }
+			},
+			error: function (jqXHR, textStatus, errorThrown)
+			{
+			  alert(textStatus);
+			}
+		});
+		return false;//This will prevent the form to submit
+	}
+	else
+	{
+		if(!phone.match(filter))
+	    {
+	    	alert('Please enter Valid 10 Digit Phone Number');
+	    	$('#phone').focus(); 
+	    	return false;
+	    }
+	    else 
+	    {
+    		$("#booking-form").unbind('submit').submit();
+    	}
+	}
+};
+
+$("#booking-form").submit(submitHandler);
+
+$('#login_form').submit(function(e){
+    e.preventDefault();
+	$.ajax({
+		url : 'GetPhpData.php',
+		type: "POST",
+		data: $('#login_form').serialize(),
+		dataType: "JSON",
+		success: function(data)
+		{
+			console.log(data);
+			alert(data.message);
+		    if(data.status==1)
+		    {
+		    	$('#first_form').css('display','none');
+		    	$('#signup').val('0');
+		    	$('#email').val(data.data.email);
+		    	$('#user_id').val(data.data.user_id);
+		    	$('#password').val(data.data.password);
+		    	$("#email").prop("disabled", true);
+		    	$("#password").prop("disabled", true);
+		    	$(".sign-in-pop").toggle();
+		    }
+		},
+		error: function (jqXHR, textStatus, errorThrown)
+		{
+		  alert(textStatus);
+		}
+	});
+});
+
+
+/***********booking form js*******/
+$("input.sel-radio:radio").click(function() {
+	
+    if (this.checked) {
+    	if(this.value=='cash')
+		{
+			var check = 'bar';
+			var notcheck = 'twint';
+			var notcheck = 'stripe';
+		}
+		else if(this.value=='Twint')
+		{
+			var check = 'twint';
+			var notcheck = 'bar';
+			var notcheck = 'stripe';
+		}
+		else if(this.value=='stripe')
+		{
+
+			// var total_price = $("#total_price").val();
+			// var user_id ='<?php echo $user_id;?>';
+			// if(user_id){
+			// window.location.href = "stripe-payment.php?amount="+total_price;
+		 //    }else{
+		 //    	alert('please login your account.');
+		 //    }
+			var check = 'stripe';
+			var notcheck = 'bar';
+			var notcheck = 'twint';
+		}
+        $('.'+check).addClass('active');
+        $('.'+notcheck).removeClass('active');
+    }
+});
+
+$(".open-sign").click(function(){
+	$(".sign-in-pop").toggle();
+});
+$(".open-voucher").click(function(){
+	$(".voucher").toggle();
+});
+
+</script>

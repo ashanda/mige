@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head><meta charset="euc-jp">
+
+<meta name="description" content="FAHRSCHULE STAR responsive multipurpose template">
+<meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Parallax">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAHRSCHULE STAR</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="css/ani-1.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="css/color-schemes/default.css" id="style-colors" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link type="image/ico" href="images/favicon.png" rel="Shortcut Icon">
+
+</head>
+<body>
+<div id="loader-container">
+  <div class="loader-content">
+    <div class="loader">Loading...</div>
+  </div>
+</div>
+<!--/Loader-->
+
+<!-- Main content -->
+<div id="main">
+  
+  <!--Header-->
+  <header id="header">
+    <!--Logo-->
+    <div class="logo">
+      <a target="_parent" href="index.html">
+          <img src="images/logo.png" alt="">
+      </a>
+    </div>
+    <!--/Logo-->
+    
+    <!--Menu button-->
+    <div id="btn-menu">
+      <span class="title">Menu</span>
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>
+    <!--/Menu button-->        
+  </header>
+  <!--/Header-->  
+  
+  <!--Menu-->
+  <nav class="menu text-right subfont">
+    <!--Menu button-->
+    <div class="btn-menu-close">
+        <i class="fa fa-times"></i>
+    </div>
+    
+    <!--Menu content-->
+    <div class="menu-content">
+        <ul class="menu-list">
+			<li><a class="menu-title" href="#profile.html">Profile</a></li>
+			<li><a class="menu-title" href="about.html">About Us</a></li>
+			<li><a class="menu-title" href="registration-form.html">Registration</a></li>
+			<li><a class="menu-title" href="pricing.html">Pricing</a></li>
+            <li><a class="menu-title" href="process.html">Process</a></li>
+            <li><a href="contact.html" class="menu-title">Contact Us</a></li>
+            <li><a href="#request-trial.html" class="menu-title">Request a trial Lesson now</a></li>
+            <li><a href="#log-out.html" class="menu-title">Log Out</a></li>
+        </ul>
+          
+        <ul class="menu-social">
+           <li><a href="https://www.facebook.com/starFAHRSCHULE STAR/"><i class="fa fa-facebook"></i></a></li>
+		   <li><a href="https://www.instagram.com/FAHRSCHULE STARstar.ch/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <!--/Menu content-->
+               
+  </nav>  
+  <!--/Menu--> 
+<style>
+.profile-userpic {
+    background: #e90616;
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+    margin-bottom: 49px;
+}
+.profile-userpic img {
+    border-radius: 50%;
+    max-width: 120px;
+    margin: 0 auto;
+    margin-bottom: -70px;
+}
+.profile-form {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    box-shadow: 3px 2px 14px 0px #00000012;
+    border-radius: 10px;
+    overflow: hidden;
+}
+a.read-more-btn {
+    background: #727272;
+}
+.profile-usermenu {
+    padding: 20px 20px 30px;
+}
+</style>
+  <!--Our team-->
+  <section class="team team-text" style="background-color:#fff;">
+		<div class="container">
+			<div class="row profile">
+				<div class="col-md-12">
+					<div class="profile-form">
+						<div class="profile-userpic">
+							<img src="images/profile.jpg" class="img-responsive" alt="">
+						</div>
+						<!-- <span class="user-name">Marcus Doe</span> -->
+						<div class="profile-usermenu">
+							<form class="sign-in">
+								<div class="form-group">
+									<label>Username</label>
+									<input class="form-control" type="text" value="Marcus Doe" disabled="">
+								</div>
+								<div class="form-group">
+									<label>Email</label>
+									<input class="form-control" type="email" value="marcus@gmail.com" disabled="">
+								</div>
+								<div class="form-group">
+									<label>Subscription Date</label>
+									<input class="form-control" type="text" value="05-06-2020" disabled="">
+								</div>
+								<div class="form-group">
+									<label>Plan Selected</label>
+									<select class="form-control" disabled="">
+									  <option>No Plan Selected</option>
+									  <option>PREISE AUTO</option>
+									  <option>PRICES CAR</option>
+									  <option>PRICE CONTROL</option>
+									  <option selected="">PRICE MOTORCYCLE</option>
+									  <option>PRICE EMERGENCY</option>
+									  <option>PRICE TRAVEL</option>
+									</select>
+								</div>
+								<a href="#" class="read-more-btn">Edit Profile</a>
+							</form>
+						</div>
+						<!-- END MENU -->
+					</div>
+				</div>
+			</div>
+		</div>
+  </section>  
+</div>
+<!-- /Main content -->
+
+
+<footer>
+  <div class="row no-margin">
+      <div class="col-md-9 col-sm-12">
+          <!--Info text-->
+          <p class="subfont">Landstrasse 20, 5430 Wettingen / Phone: 056 611 99 77 / Contact</p>
+          <!--/Info text-->
+      </div>
+      <div class="col-md-3 col-sm-12">
+          <!--Social icons-->
+          <ul class="official-part">
+            <li><b>Official Partner :</b> </li>
+            <li class="offi"><a href="ducati-partner.html"><img src="images/p-logo.png"></a></li>
+          </ul>
+          <!--Social icons-->
+      </div>                
+  </div>
+</footer>
+
+<!-- Color switcher -->
+<div class="color-switcher hide-color-switcher">
+  <!--Color switcher Show/Hide button -->
+  <a class="switcher-button"><i class="fa fa-cog fa-spin"></i></a>
+  <!-- Color switcher title -->
+  <div class="color-switcher-title">   
+    <h5>Color Switcher</h5>
+  </div>
+  
+  <!-- Colors style -->
+  <div class="color-list"> 
+    <a class="color default-theme" title="default"></a>
+    <a class="color emerald-theme" title="emerald"></a>
+    <a class="color peter-river-theme" title="peter-river"></a>
+    <a class="color amethyst-theme" title="amethyst"></a>
+    <a class="color wet-asphalt-theme" title="wet-asphalt"></a>
+    <a class="color green-sea-theme" title="green-sea"></a>
+    <a class="color nephritis-theme" title="nephritis"></a>
+    <a class="color belize-hole-theme" title="belize-hole"></a>
+    <a class="color wisteria-theme" title="wisteria"></a>
+    <a class="color midnight-blue-theme" title="midnight-blue"></a>
+    <a class="color sun-flower-theme" title="sun-flower"></a>
+    <a class="color carrot-theme" title="carrot"></a>
+    <a class="color alizarin-theme" title="alizarin"></a>
+    <a class="color concrete-theme" title="concrete"></a>
+    <a class="color orange-theme" title="orange"></a>
+    <a class="color pumpkin-theme" title="pumpkin"></a>
+    <a class="color bordeaux-theme" title="bordeaux"></a>
+    <a class="color asbestos-theme" title="asbestos"></a>               
+  </div>
+</div>
+<!-- /Color switcher -->
+
+<!--JS-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/anim.js"></script>
+</body>
+</html>

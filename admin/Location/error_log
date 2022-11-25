@@ -1,0 +1,9 @@
+[19-Sep-2020 08:50:53 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function edit_location(), 5 passed in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Location/EditLocation.php on line 15 and exactly 6 expected in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:128
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Location/EditLocation.php(15): edit_location('kotkapura', '', '', 'kotkapura', '7')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 128
+[19-Sep-2020 09:05:06 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Location/index.php on line 4
+[19-Sep-2020 09:05:06 UTC] PHP Warning:  array_slice() expects parameter 1 to be array, null given in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Location/index.php on line 6
+[19-Sep-2020 09:05:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Location/index.php on line 41
+[28-Oct-2021 05:03:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Location/GetGoogleLocation.php on line 23

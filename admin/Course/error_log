@@ -1,0 +1,798 @@
+[16-Apr-2021 13:59:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[16-Apr-2021 13:59:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[16-Apr-2021 14:00:03 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[16-Apr-2021 14:00:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[16-Apr-2021 14:00:16 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[16-Apr-2021 14:00:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[16-Apr-2021 14:00:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 04:28:22 UTC] PHP Parse error:  syntax error, unexpected '}' in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 131
+[17-Apr-2021 04:28:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 131
+[17-Apr-2021 07:07:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_all_categories() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 3
+[17-Apr-2021 07:09:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_all_categories() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 3
+[17-Apr-2021 09:03:53 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:03:58 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:04:03 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:04:08 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:04:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:07:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:07:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:07:49 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:08:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[17-Apr-2021 09:08:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[19-Apr-2021 05:43:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[20-Apr-2021 09:54:17 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[20-Apr-2021 09:54:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[20-Apr-2021 11:54:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[20-Apr-2021 11:55:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[20-Apr-2021 11:56:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[21-Apr-2021 07:13:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[21-Apr-2021 07:26:52 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[22-Apr-2021 08:00:17 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[29-Apr-2021 14:40:35 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[30-Apr-2021 07:38:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[03-May-2021 16:46:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[03-May-2021 16:48:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[03-May-2021 16:48:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[04-May-2021 05:58:40 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 67
+[04-May-2021 06:46:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 148
+[04-May-2021 07:00:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 148
+[04-May-2021 07:00:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 133
+[04-May-2021 07:01:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 148
+[04-May-2021 07:06:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 148
+[04-May-2021 07:06:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:24:16 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:24:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:26:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:26:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:27:57 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:28:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:29:52 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:30:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:31:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:31:46 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:32:35 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:33:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:33:39 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 07:33:53 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:40:51 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:41:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:41:16 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:42:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:48:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:48:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:48:57 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:50:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:50:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:57:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:57:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 09:57:57 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:04:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:04:39 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:05:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:05:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:05:28 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:05:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:06:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 400
+[04-May-2021 10:06:18 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:07:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:16:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:16:45 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:17:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:17:59 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:18:51 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:20:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:20:17 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:20:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:20:54 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:21:39 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:22:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:23:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:25:15 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:26:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:27:08 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:27:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:34:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:34:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:35:22 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:35:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:36:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:36:45 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:37:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:37:08 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:38:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:38:28 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:38:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:40:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:40:28 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:40:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:51:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:51:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 10:51:51 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:00:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:04:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:05:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:06:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:07:05 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:08:21 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:08:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:08:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:10:50 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:10:56 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:11:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:12:03 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:12:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:13:17 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:13:21 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:13:58 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:14:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:14:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:21:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:22:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:24:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:24:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:24:50 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:25:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:26:24 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:26:28 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:30:06 UTC] PHP Parse error:  syntax error, unexpected 'switch' (T_SWITCH) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 361
+[04-May-2021 11:31:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:31:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:31:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:32:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:32:15 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:32:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:32:24 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:32:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:33:05 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:33:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:33:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:33:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:33:46 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:34:53 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:34:57 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:35:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:35:16 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:37:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:37:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:37:51 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:41:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:41:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:41:17 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:41:21 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:42:58 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:44:03 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:44:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:44:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:45:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:46:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:46:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:46:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:46:50 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:46:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:47:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:49:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:49:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:49:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 11:49:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 12:00:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 12:01:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 12:01:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:16:58 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:18:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:18:18 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:18:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:18:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:25:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:30:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:30:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:30:11 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:30:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:31:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:31:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:32:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:32:45 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:32:52 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:35:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:35:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:35:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:35:49 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 13:35:54 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 20:33:56 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 20:34:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 20:34:22 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 20:34:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[04-May-2021 20:34:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:41:54 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:43:24 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:43:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:43:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:43:39 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:43:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:45:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:45:17 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:45:21 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[05-May-2021 06:45:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 05:30:52 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:12:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:16:16 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:16:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:33:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:33:59 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:34:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:35:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:35:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 08:36:24 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:29:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:30:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:30:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:33:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:35:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:37:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:41:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:42:46 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:42:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 397
+[07-May-2021 09:42:51 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:43:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_course_detail_by_couse_id() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 30
+[07-May-2021 09:43:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 540
+[07-May-2021 09:43:32 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 540
+[07-May-2021 09:43:36 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 540
+[07-May-2021 09:44:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:49:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:49:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 09:55:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:01:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:02:35 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:05:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:05:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:06:15 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:15:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:16:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:16:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:16:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:25:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:25:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:25:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:25:40 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[07-May-2021 10:25:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[09-May-2021 10:57:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[09-May-2021 10:57:39 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[09-May-2021 10:57:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[09-May-2021 10:57:45 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[09-May-2021 10:57:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[09-May-2021 18:46:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[09-May-2021 18:46:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[10-May-2021 18:34:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[10-May-2021 18:34:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[10-May-2021 18:35:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[10-May-2021 18:35:11 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[10-May-2021 18:35:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[10-May-2021 18:35:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[19-Jul-2021 15:03:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[19-Jul-2021 18:50:30 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[22-Aug-2021 12:57:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[22-Aug-2021 12:57:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[22-Aug-2021 13:02:51 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[22-Aug-2021 13:02:59 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[22-Aug-2021 13:03:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[22-Aug-2021 13:03:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[22-Aug-2021 13:03:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[29-Aug-2021 16:07:45 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[29-Aug-2021 16:08:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[29-Aug-2021 16:08:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[29-Aug-2021 16:08:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[29-Aug-2021 16:08:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:13:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:13:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:13:53 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:14:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:14:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:14:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:25:31 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:25:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:25:40 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:25:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 13:25:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 16:41:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 16:44:11 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 16:50:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[18-Oct-2021 16:52:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[10-Nov-2021 08:01:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[11-Nov-2021 10:04:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[30-Nov-2021 07:30:28 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[30-Nov-2021 08:30:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[30-Nov-2021 09:33:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[30-Nov-2021 11:15:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[30-Nov-2021 12:33:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[01-Dec-2021 06:57:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[01-Dec-2021 06:58:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[01-Dec-2021 09:57:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[01-Dec-2021 09:58:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[01-Dec-2021 10:12:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[02-Dec-2021 11:47:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[02-Dec-2021 11:47:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[02-Dec-2021 11:49:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[02-Dec-2021 11:50:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[02-Dec-2021 11:52:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[02-Dec-2021 11:53:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[03-Dec-2021 08:35:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[03-Dec-2021 08:38:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/AddCourse.php on line 54
+[14-Dec-2021 17:31:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[14-Dec-2021 17:31:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[14-Dec-2021 17:33:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[14-Dec-2021 17:33:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[14-Dec-2021 17:33:51 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[14-Dec-2021 17:33:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '309')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[14-Dec-2021 17:35:40 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[14-Dec-2021 17:35:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '313')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[14-Dec-2021 17:35:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[14-Dec-2021 17:35:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[14-Dec-2021 17:36:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[14-Dec-2021 17:36:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[14-Dec-2021 17:58:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[14-Dec-2021 17:58:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[15-Dec-2021 04:47:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[15-Dec-2021 04:47:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[15-Dec-2021 05:02:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[15-Dec-2021 05:02:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[15-Dec-2021 05:03:52 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[15-Dec-2021 05:03:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[15-Dec-2021 18:48:40 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[15-Dec-2021 18:48:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[15-Dec-2021 18:49:18 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[15-Dec-2021 18:49:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 05:51:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 05:51:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 05:51:52 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 05:51:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 05:52:15 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 05:52:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:15:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:15:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:18:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:18:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:20:35 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:20:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:20:39 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:20:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:21:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:21:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:22:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:22:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:22:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:22:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:22:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:22:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:25:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:25:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:25:56 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:25:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('50', '316')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:26:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:26:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:26:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:26:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:26:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:26:49 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:27:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:27:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '311')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:30:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:31:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:31:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '309')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:32:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:35:15 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:35:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '309')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:37:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:37:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:37:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:37:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:37:30 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:37:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:37:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:37:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:37:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:37:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:38:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:38:22 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:38:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:40:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:40:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:40:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:40:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:46:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:46:05 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '309')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:46:10 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '310')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:46:16 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '311')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:46:28 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:46:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('50', '316')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:46:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:45 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:49 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:49 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:50 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:59 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:46:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:47:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php:9
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(26): get_booked_course_detail_by_course_ids('312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 9
+[16-Dec-2021 10:47:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php:9
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(26): get_booked_course_detail_by_course_ids('312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 9
+[16-Dec-2021 10:47:46 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:47:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:49:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:49:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:49:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:49:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:49:15 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:49:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:50:30 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:50:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:50:34 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:50:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:50:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:50:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:50:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:50:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:50:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('50', '316')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:51:11 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:51:18 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:51:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '310')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:51:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:51:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '312')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:51:31 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:52:08 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:52:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:52:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:52:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:55:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:55:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '309')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:55:22 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:55:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:55:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:55:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:665
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('45', '207')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 665
+[16-Dec-2021 10:58:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 10:58:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:01:49 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:02:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:02:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:03:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:03:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:03:31 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:03:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:03:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:03:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:06:22 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:06:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '309')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:06:31 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:06:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '308')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:06:37 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:06:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '305')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:06:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:06:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('48', '251')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:06:53 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:06:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('46', '218')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:07:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:07:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:07:35 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:09:30 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:09:43 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:10:39 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:10:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:10:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:10:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php:666
+Stack trace:
+#0 /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php(335): get_refund_detail_by_id('49', '314')
+#1 {main}
+  thrown in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/includes/Functions.php on line 666
+[16-Dec-2021 11:23:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:23:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:23:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:23:45 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:33:57 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:34:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:34:10 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:34:16 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:34:26 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:34:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:34:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 11:40:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[16-Dec-2021 20:25:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[17-Dec-2021 06:14:21 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[17-Dec-2021 06:26:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[17-Dec-2021 10:36:05 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[17-Dec-2021 10:36:13 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[17-Dec-2021 10:38:59 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311
+[17-Dec-2021 10:39:24 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home4/dharmani/public_html/FahrschuleStarWebSite/admin/Course/refund.php on line 311

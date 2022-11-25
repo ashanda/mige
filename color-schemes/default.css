@@ -1,0 +1,61 @@
+
+/********* Background-color *********/ 
+h1 span, .load-more .icon, .project-pagination-content .prev-project:hover, .project-pagination-content .next-project:hover, .post-wrapper:hover, .text-wrapper, .quotation, .service-content .icon, #btn-menu:hover .line, ._mCS_1 .mCSB_dragger .mCSB_dragger_bar, ._mCS_1 .mCSB_dragger .mCSB_dragger_bar:hover, ._mCS_1 .mCSB_dragger:hover > .mCSB_dragger_bar, .widget .widget-title, .widget .widget-title{
+	background-color:#e90616;
+} 
+
+
+/********* Background *********/ 
+::selection {
+	background: #e90616; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+	background: #e90616; /* Gecko Browsers */
+	color:#fff;
+}
+
+
+/********* Color *********/ 
+.highlight, #btn-menu:hover .title, .btn-menu-close:hover i, .menu-list li a:hover, .menu-list li a.menu-title:hover, .menu-social li a:hover,.widget input.search:focus, .load-more:hover .icon i, .post-info i, .post-category a:hover, .social-share p a, .post-author .author-name, .post-subtitle, .comment-info .comment-author-name, .team-item ul.social li a:hover, .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span, .contact-text a:hover, footer ul li a:hover, .widget ul li:before, .widget .widget-post-title a:hover, .widget li a:hover, .widget a.tag-link:hover, .post-author .author-info ul li a:hover, .comment-info .comment-reply:hover, .comment-info .comment-reply:focus, .widget ul li:before, .widget .widget-post-title a:hover, .widget li a:hover, .widget a.tag-link:hover, .post-author .author-info ul li a:hover, .comment-info .comment-reply:hover, .comment-info .comment-reply:focus{
+	color:#e90616;
+}
+
+
+/********* Border *********/ 
+.load-more .icon, .service-content .icon{
+	border:1px solid #e90616;
+}
+
+
+/********* Border color *********/ 
+.menu-social li a:hover,.widget input.search:focus{
+	border-color:#e90616;
+}
+
+/********* Border left 8px *********/ 
+.loader {
+	border-left: 8px solid #e90616;
+}
+
+/********* RGB *********/ 
+h1 span{
+	-webkit-box-shadow: -15px 0 0 rgba(233, 6, 22, 1), 15px 0 0 rgba(233, 6, 22, 1);
+    -moz-box-shadow:    -15px 0 0 rgba(233, 6, 22, 1), 15px 0 0 rgba(233, 6, 22, 1);
+    box-shadow:         -15px 0 0 rgba(233, 6, 22, 1), 15px 0 0 rgba(233, 6, 22, 1);
+}
+
+.loader {
+	border-top: 8px solid rgba(233, 6, 22, 0.2);
+	border-right: 8px solid rgba(233, 6, 22, 0.2);
+	border-bottom: 8px solid rgba(233, 6, 22, 0.2);
+}
+
+.portfolio .portfolio-item:hover > .hover-item{
+	background-color: rgba(233, 6, 22, 0.9);
+}
+
+.portfolio .hover-item{
+	background-color: rgba(123, 207, 218, 0);	 
+}
+

@@ -220,6 +220,24 @@ include '../includes/Functions.php';
                     <span>Users</span></a>
                
             </li>
+            <li class="treeview"><a href="#">
+                <i class="icon icon-account_box s-18"></i>
+                <span>Exam</span><i class="icon icon-angle-left s-18 pull-right"></i>
+            </a>
+                <ul class="treeview-menu">
+                    <li><a href="../Exam/Exam.php"><i class="icon icon-circle-o"></i>
+                    <span>Exam Details</span></span></a>
+                    </li>
+                    <li><a href="../Exam/Exam_results.php"><i class="icon icon-circle-o"></i>
+                    <span>Exam Results</span></a>
+                    </li>
+                    <li><a href="../Exam/New_Exam.php"><i class="icon icon-add"></i>
+                    <span>Add Exam</span></a>
+                    </li>
+                    <!-- <li><a href=""><i class="icon icon-circle-o"></i><span>Manage Instructor</span></a>
+                    </li> -->
+                </ul>
+            </li>
 
             <li class="treeview">
             

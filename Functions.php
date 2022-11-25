@@ -566,6 +566,14 @@ function get_location_list()
     return $q['result'];
 }
 
+function get_exam_list()
+{
+    global $conn;
+    $sql = " SELECT * FROM tbl_exam_details ";
+    $results = $conn->query($sql);
+    return $results;
+}
+
 function get_location_by_category_id($category_id,$sub_category_id)
 {
    global $conn;

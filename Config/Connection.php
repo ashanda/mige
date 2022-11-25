@@ -1,7 +1,7 @@
 <?php
 
-//$conn = new mysqli("localhost","owowogoh_fahweb","mige@fahrschule-star.ch","owowogoh_fahweb");
-$conn = new mysqli("mysql27j10.db.hostpoint.internal","owowogoh_star","31pZfhZo","owowogoh_fahweb");  
+$conn = new mysqli("localhost","root","","mige");
+//$conn = new mysqli("mysql27j10.db.hostpoint.internal","owowogoh_star","31pZfhZo","owowogoh_fahweb");  
 
 if(mysqli_connect_error())
 {

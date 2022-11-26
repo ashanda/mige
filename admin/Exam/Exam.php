@@ -1,9 +1,14 @@
 <?php
 include '../includes/header.php';
 global $conn;
-    $sql = " SELECT * FROM tbl_exam_details ";
-    $results = $conn->query($sql);
-include('../includes/pagination.php');
+if(isset($_GET['remove'])){
+	$remove=mysqli_real_escape_string($conn,$_GET['remove']);
+	if(mysqli_query($conn,"DELETE FROM lms_exam_details WHERE lms_exam_id='$remove'")){
+		echo "<script>window.location='exam.php?removed';</script>";
+	}
+}
+
+
 
 
 ?>
@@ -13,8 +18,8 @@ include('../includes/pagination.php');
             <div class="row p-t-b-10 ">
                 <div class="col">
                     <h4>
-                        <i class="icon-map-marker"></i>
-                        List Of Locations
+                        
+                        List Of Exams
                     </h4>
                 </div>
             </div>
@@ -27,60 +32,50 @@ include('../includes/pagination.php');
                     <div class="col-md-12">
                         <div class="card r-0 shadow">
                             <div class="table-responsive">
-                                <form>
-                                    <table class="table table-striped table-hover r-0">
-                                        <thead>
-                                        <tr class="no-b">
-                                            <th>SNo</th>
-                                            <th>Location</th>
-                                            <th>Location Detail</th>
-                                            <th>Action</th>
-                                        </tr>
-                                        </thead>
+											<table id="example3" class="table table-bordered">
+												<thead>
+													<tr>
+														<th>Aktion</th>
+                                                        <th>PRÜFUNG</th>
+                                                        <th>Kurs ID</th>
+                                                        <th>ZEITDAUER</th>
+                                                        <th>FRAGEN AUF PAPIER</th>
+                                                        <th>ZEIT HINZUFÜGEN</th>
+													</tr>
+												</thead>
+												<tbody>
+								<?php 
+//$join_str="lms_exam_details INNER JOIN lmssubject ON lms_exam_details.lms_exam_subject=lmssubject.sid";
+$exam_qury=mysqli_query($conn,"SELECT * FROM lms_exam_details INNER JOIN tbl_course ON lms_exam_details.lms_exam_course = tbl_course.course_id  ORDER BY lms_exam_id DESC");
+while($exam_resalt=mysqli_fetch_array($exam_qury)){
+?>
+                    <tr>
+						<td style="white-space: nowrap;">
+<a href="q_list.php?exam_id=<?php echo $exam_resalt['lms_exam_id']; ?>" class="btn btn-sm btn-success" title="Frage hinzufügen">Frage hinzufügen</a>
+<a href="new_exam.php?lms_exam_id=<?php echo $exam_resalt['lms_exam_id']; ?>" class="btn btn-sm btn-primary" title="Test Prüfung"><i class="fa fa-edit"></i></a>
+<a href="exam.php?remove=<?php echo $exam_resalt['lms_exam_id']; ?>" class="btn btn-sm btn-danger" title="Test Prüfung" onClick="JavaScript:return confirm('Are your sure remove this exam?');">
+<i class="fa fa-trash-o"></i></a>
 
-                                        <tbody>
-                                        <?php foreach ($results as $key) 
-                                        {
-                                            $s_num = $key['exam_id'];
-                                            $name = $key['exam_name'];
-                                            $location_detail = $key['num_question'];
-                                            $id = $key['exam_time_duration'];
-                                            ?>
-                                            <tr>
-                                                <td><?php echo $s_num;?></td>
-                                                <td><?php echo $name;?></td>
-                                                <td><?php echo $location_detail;?></td>
-                                                <td>
-                                                    <a href="EditLocation.php?id=<?php echo $s_num;?>"><i class="icon-pencil iconspace"></i></a>
-                                                    <a onclick="delete_record('<?php echo $id;?>')" href="#"><i class="icon-trash mr-3 iconspace"></i></a>
-                                                </td>
-                                            </tr>
-                                            <?php
-                                        }
-                                        ?>                                        
-                                        </tbody>
-                                    </table>
-                                </form>
-                            </div>
+						</td>
+						<td><?php echo $exam_resalt['lms_exam_name']; ?></td>
+						
+                        <td><?php echo $exam_resalt['course_title_eng']; ?></td>
+					
+						<td><?php echo $exam_resalt['lms_exam_time_duration']."Min"; ?></td>
+						<td><?php echo $exam_resalt['lms_exam_question']; ?></td>
+						<td><?php echo date_format(date_create($exam_resalt['lms_exam_add_time']),"M d, Y - h:i:s A"); ?></td>										
+													</tr>
+<?php
+}
+?>
+												</tbody>
+											</table>
+                                            </div>
                         </div>
                     </div>
                 </div>
 
-                <nav class="my-3" aria-label="Page navigation" style="display: flex;justify-content: center;">
-                    <ul class="pagination">
-                        <?php echo $pagination;?>
-                        <!-- <li class="page-item"><a class="page-link" href="#">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a>
-                        </li> -->
-                    </ul>
-                </nav> 
+
             </div>
         </div>
     </div>

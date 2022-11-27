@@ -3,6 +3,7 @@
     background: #2f2e2e;
     padding: 2rem;
     color: #fff;
+    
   }
     .nav-title {
     font-size: 21px;

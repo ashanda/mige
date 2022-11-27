@@ -29,6 +29,7 @@ div#main {
  
 <section class="profile-background" style="background : url(https://webdesign-finder.com/edlane/wp-content/uploads/2019/04/slide01.jpg);">
 <div class="container">
+<div class="emp-profile">
 <div class="col-lg-12 col-md-12">
 						<div class="table-responsive mt-30">
 							<table id="example" class="table table-bordered" style="margin-top: 10px;">
@@ -105,7 +106,7 @@ End: <?php echo date("Y-m-d h:i:s A",strtotime($exam_resalt['lms_exam_end_time']
 						</div>
 </div>
 </section>
-
+</div>
 </div>
 <!-- /Main content -->
 

@@ -24,13 +24,15 @@ include_once 'Config/Connection.php';?>
 
       	$translations['_logout_title_'] = 'Are you sure you want to logout?';
 		$translations['_exam_title_'] = 'Exam';
+		$translations['_reapply_title_'] = 'Reapply ID';
         $run="SELECT `id`, `pageid`, `alias`, `inenglish` as detail FROM `page_content_translation`";
 
       }
       else
       {
       	$translations['_logout_title_'] = 'Möchten Sie sich wirklich abmelden?';
-		$translations['_exam_title_'] = 'Exam';
+		$translations['_exam_title_'] = 'Prüfungsdetails';
+		$translations['_reapply_title_'] = 'ID erneut beantragen Card';
         $run="SELECT `id`, `pageid`, `alias`, `ingerman` as detail FROM `page_content_translation`";
        
       }
@@ -212,7 +214,10 @@ include_once 'Config/Connection.php';?>
 			          else
 			          {
 			            ?>
+						
+						<a class="select_li" href="<?=$config['base_url']?>/reapply.php"><li><?php echo $translations['_reapply_title_'];?></li></a>
 						<a class="select_li" href="<?=$config['base_url']?>/exam_list.php"><li><?php echo $translations['_exam_title_'];?></li></a>
+
 			            <a class="select_li" href="<?=$config['base_url']?>/profile.php"><li><?php echo $translation['_Profile_title_'];?></li></a>
 			            <a class="select_li" onclick="return confirm('<?=$translations['_logout_title_']?>')" href="<?=$config['base_url']?>/Logout.php"><li><?php echo $translation['_logout_title_'];?></li></a>
 			            <?php

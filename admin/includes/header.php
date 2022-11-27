@@ -147,6 +147,12 @@ include '../includes/Functions.php';
                
             </li>
             
+            <li class="treeview">
+            
+                    <a href="../ID/reapply.php"><i class="icon icon-apps s-18"></i>
+                    <span>ID Card</span></a>
+               
+            </li>
                 <li class="treeview">
             
                     <a href="../addtranslation/index.php"><i class="icon icon-plus-circle s-18"></i>

@@ -1,10 +1,12 @@
 ﻿<?php
 include 'header.php';
-
-include 'Functions.php';
+global $conn;
 $user_id = $_SESSION['user_id'];
 
-$get_history_details = get_history_details($user_id);
+
+$user_qury=mysqli_query($conn,"SELECT * FROM user WHERE user_id='$user_id'");
+$user_resalt=mysqli_fetch_array($user_qury);
+
 
 
 
@@ -25,22 +27,6 @@ if(!isset($_SESSION['exam_id'])){
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-	
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, shrink-to-fit=9">
-	<meta name="description" content="englishwithera.com">
-	<meta name="author" content="englishwithera.com">
-	<title>Prüfung | Online Learning Platforms | Studentin Panel</title>
-
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="dist/jquery.quiz-min.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="dist/jquery.quiz-min.js"></script>
 <style type="text/css">
 	
 /* The container */
@@ -190,12 +176,13 @@ if(!isset($_SESSION['exam_id'])){
 <div class="container">
 <div class="emp-profile">
 <div class="col-lg-12 col-md-12">
+	<!-- Body Start -->
 	<div class="wrapper">
 		<div class="sa4d25">
 			<div class="container-fluid">			
 				<div class="row">
 				<div class="col-lg-12">
-				<h4 class="item_title">Prüfungsdetails</h4>
+				<h4 class="item_title">Exam Details</h4>
 					
 <div class="Time_dis">
 <div id="demo">Time: 0:0:0</div>
@@ -206,105 +193,45 @@ if(!isset($_SESSION['exam_id'])){
 				<div class="row mb-4">
 
 <div class="col-sm-12">
-<div id="quiz">
-  
-  <div id="quiz-start-screen">
-    <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
+
+<?php
+$q_count=0;
+$q_qury=mysqli_query($conn,"SELECT *
+FROM lms_mcq_questions mcq
+WHERE mcq.exam_id='$_SESSION[exam_id]'");
+while($q_resalt=mysqli_fetch_assoc($q_qury)){
+$q_count++;
+?>
+
+<h3 class="question"><?php echo $q_count; ?>.<br><?php echo $q_resalt['question']; ?></h3>
 	
-  </div>
-  <button type="button" class="btn btn-primary" id="note" data-toggle="modal" data-target="#exampleModalCenter">
-  Notes
-</button>
-</div>
-<script>
-  $('#quiz').quiz({
-    //resultsScreen: '#results-screen',
-    counter: true,
-    //homeButton: '#custom-home',
-	allowIncorrect: true,
-    counterFormat: 'Frage %current of %total',
-    questions: [
-		<?php
-			$q_count=0;
-			$q_qury=mysqli_query($conn,"SELECT *FROM lms_mcq_questions mcq WHERE mcq.exam_id='$_SESSION[exam_id]'");
-			while($q_resalt=mysqli_fetch_assoc($q_qury)){
-			$q_count++; ?>
-      {
-        'q': '<?php echo $q_count; ?>.<?php echo $q_resalt['question']; ?>',
-        'options': [
-          '<?php echo $q_resalt['ans_1']; ?>',
-          '<?php echo $q_resalt['ans_2']; ?>',
-          '<?php echo $q_resalt['ans_3']; ?>',
-          '<?php echo $q_resalt['ans_4']; ?>'
-        ],
-        'correctIndex': <?php echo $q_resalt['ans']; ?>,
-        'correctResponse': 'Custom correct response.',
-        'incorrectResponse': 'Custom incorrect response.'
-      },
-	  <?php
-		}
-	  ?>
-      
-    ],
-	
-	finishCallback: function(){
-		$.ajax({
-             type: "POST",
-             url: "exam_save.php",
-             data: {user_id: '<?php echo $_SESSION['reid']?>',exam_id: '<?php echo $_SESSION['exam_id'];?>',status: '1'},
-             success: function(msg){
-              if(msg==true){
-				console.log('true');
-			  }else{
-				console.log('false');
-			  }
-         }
-	});
-	},
+<label class="container">A) <?php echo $q_resalt['ans_1']; ?><input type="radio" value="1" name="answer<?php echo $q_count; ?>" onChange="answer_mark('<?php echo $_SESSION['exam_id']; ?>','<?php echo $q_resalt['id']; ?>','1');"> <span class="checkmark"></span></label>
+<label class="container">B) <?php echo $q_resalt['ans_2']; ?><input type="radio" value="1" name="answer<?php echo $q_count; ?>" onChange="answer_mark('<?php echo $_SESSION['exam_id']; ?>','<?php echo $q_resalt['id']; ?>','2');"> <span class="checkmark"></span></label>
+<label class="container">C) <?php echo $q_resalt['ans_3']; ?><input type="radio" value="1" name="answer<?php echo $q_count; ?>" onChange="answer_mark('<?php echo $_SESSION['exam_id']; ?>','<?php echo $q_resalt['id']; ?>','3');"> <span class="checkmark"></span></label>
+<label class="container">D) <?php echo $q_resalt['ans_4']; ?><input type="radio" value="1" name="answer<?php echo $q_count; ?>" onChange="answer_mark('<?php echo $_SESSION['exam_id']; ?>','<?php echo $q_resalt['id']; ?>','4');"> <span class="checkmark"></span></label>
 
-	
-  });
-  
-</script>
-
-
-
+<?php
+}
+?>
+<a href="results.php" class="btn btn-success submit-btn">Submit</a>
 
 </div>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Notes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-	  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      
-    </div>
-  </div>
-</div>
+
 
 
 			</div>
 			</div>
 		</div>
 		
-
-	</div>
-	<!-- Body End -->
-	</div>
+		</section>
 </div>
-</section>	
-<?php include 'footer-new.php';?> 
+</div>
+
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("<?php date_default_timezone_set("Asia/Colombo"); echo date("M d, Y H:i:s",time()+60*$ex_resalt['lms_exam_time_duration']); ?>").getTime();
 
-// Aktualisieren the count down every 1 second
+// Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
@@ -343,6 +270,6 @@ function answer_mark(paper,q,a){
 }
 	
 </script>
-
+<?php include 'footer-new.php';?> 
 </body>
 </html>

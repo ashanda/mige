@@ -1536,13 +1536,13 @@ if(isset($_POST['type']))
 				    $adminmail->CharSet = 'UTF-8';
 				    $adminmail->Encoding = 'base64';
 				    $adminmail->SMTPDebug = 0;                                       
-				    //$mail->isSMTP();                                           
-				  /*  $mail->Host       = 'dharmani.com';  
+				    $mail->isSMTP();                                           
+				    $mail->Host       = '236.17.205.92.host.secureserver.net';  
 				    $mail->SMTPAuth   = true;                                   
-				    $mail->Username   = 'info@fahrschule-star.ch';                 
-				    $mail->Password   = 'F&n-hh^R@2S_';
+				    $mail->Username   = 'info@iflash.lk';                 
+				    $mail->Password   = '@mac.9485';
 				    $mail->SMTPSecure = 'ssl';                                  
-				    $mail->Port       = 465;            */                        // TCP port to connect to
+				    $mail->Port       = 465;
 				  
 				    //Recipients
 				   // $mail->setFrom("info@fahrschule-star.ch",'Fahrschule STAR');
@@ -1765,14 +1765,13 @@ if(isset($_POST['type']))
 		    $mail->CharSet = 'UTF-8';
 		    $mail->Encoding = 'base64';
 		    $mail->SMTPDebug = 0;                                       
-		    //$mail->isSMTP();                                           
-		   /* $mail->Host       = 'dharmani.com';  
+		    $mail->isSMTP();                                           
+		    $mail->Host       = '236.17.205.92.host.secureserver.net ';  
 		    $mail->SMTPAuth   = true;                                   
-		    $mail->Username   = 'info@fahrschule-star.ch';                 
-		    $mail->Password   = 'F&n-hh^R@2S_';
+		    $mail->Username   = 'info@iflash.lk';                 
+		    $mail->Password   = '@mac.9485';
 		    $mail->SMTPSecure = 'ssl';                                  
-		    $mail->Port       = 465;          */                          // TCP port to connect to
-		  
+		    $mail->Port       = 465;
 		    //Recipients
 		    $mail->setFrom("info@fahrschule-star.ch",'Fahrschule STAR');
 		    $mail->addAddress('roman.zuber@fahrschulestar.com',"");     // Add a recipient
@@ -2546,13 +2545,13 @@ if(isset($_POST['type']))
 			    $mail->CharSet = 'UTF-8';
 			    $mail->Encoding = 'base64';
 			    $mail->SMTPDebug = 0;                                       
-			    /*$mail->isSMTP();                                           
-			    $mail->Host       = 'dharmani.com';  
+			    $mail->isSMTP();                                           
+			    $mail->Host       = '236.17.205.92.host.secureserver.net';  
 			    $mail->SMTPAuth   = true;                                   
 			    $mail->Username   = 'info@fahrschule-star.ch';                 
-			    $mail->Password   = 'F&n-hh^R@2S_';
+			    $mail->Password   = '@mac.9485';
 			    $mail->SMTPSecure = 'ssl';                                  
-			    $mail->Port       = 465;    */                                // TCP port to connect to
+			    $mail->Port       = 465;
 			  
 			    //Recipients
 			    $mail->setFrom("info@fahrschule-star.ch",'Fahrschule STAR');

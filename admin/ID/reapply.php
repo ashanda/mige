@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -13,32 +14,28 @@ global $conn;
 
 
 
-if(isset($_GET['status'])&&isset($_GET['type'])){
+if(isset($_GET['status'])){
+	$user_id = mysqli_real_escape_string($conn,$_GET['user_id']);
 	$status=mysqli_real_escape_string($conn,$_GET['status']);
 	$type=mysqli_real_escape_string($conn,$_GET['type']);
 	
-	if($type==1){
+	if($status==1){
 		$update=0;
 	}
-	if($type==0){
-		$update=1;
-	}
+	if($status==0){
+		$update=1;?>
+
+
+	<?php }
 	
-	mysqli_query($conn,"UPDATE lmsreapply SET status='$update' WHERE userid='$status'");
 	
-	echo "<script>window.location='reapply.php';</script>";
+	
+	
 }
 
 ?>
 
-            
-        <!--**********************************
-            Sidebar end
-        ***********************************-->
-		
-        <!--**********************************
-            Content body start
-        ***********************************-->
+
 		<div class="page  has-sidebar-left height-full">
     <header class="blue accent-3 relative">
         <div class="container-fluid text-white">
@@ -75,7 +72,7 @@ if(isset($_GET['status'])&&isset($_GET['type'])){
 												<?php
 												$count=0;
                                                  
-												$tec_qury=mysqli_query($conn,"SELECT user.user_id, user.firstname, user.lastname, user.email, lmsreapply.status FROM user INNER JOIN lmsreapply ON user.user_id = lmsreapply.userid;");
+												$tec_qury=mysqli_query($conn,"SELECT user.user_id, user.firstname, user.lastname, user.email, lmsreapply.id,lmsreapply.status FROM user INNER JOIN lmsreapply ON user.user_id = lmsreapply.userid;");
 												
 												while($tec_resalt=mysqli_fetch_array($tec_qury)){
 												$count++;
@@ -90,7 +87,8 @@ if(isset($_GET['status'])&&isset($_GET['type'])){
     all ready issued
 
 <?php }else{ ?>
-    <a href="reapply.php?status=<?php echo $tec_resalt['user_id']; ?>&type=<?php echo $tec_resalt['status']; ?>" title="Issued ID" style="margin-right: 5px;" onClick="JavaScript:return confirm('Are you sure Issued ID?');" class="btn btn-sm btn-secondary"><i class="fa fa-lg fa-print" style="color: black;"></i></a>
+	<button class="btn btn-sm btn-secondary" onclick="print_id(<?php echo $tec_resalt['user_id'];?>,<?php echo $tec_resalt['id'];?>)"><i class="fa fa-lg fa-print" style="color: black;"></i></button> 
+    
 
 <?php }  ?>
 </td>
@@ -131,3 +129,22 @@ if($tec_resalt['status']==0){
 		<?php
 include '../includes/footer.php';
 ?>
+
+<script>
+				function print_id(user_id,rid){
+				//console.log(paper+" "+q+" "+a);
+				const xhttp = new XMLHttpRequest();
+				xhttp.onload = function() {
+				//document.getElementById("demo").innerHTML = this.responseText;
+				}
+				xhttp.onreadystatechange = function() { // listen for state changes
+					if (xhttp.readyState == 4 && xhttp.status == 200) { // when completed we can move away
+						
+						window.location = "reapply.php";
+					}
+					}
+				xhttp.open("GET", "print_id.php?user_id="+user_id+"&row_id="+rid, true);
+				xhttp.send();
+				
+			}
+</script>

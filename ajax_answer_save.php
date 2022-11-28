@@ -13,8 +13,9 @@ $lmsck_resalt=mysqli_fetch_array($lmsck_qury);
 
 if(mysqli_num_rows($lmsck_qury)>0){
 mysqli_query($conn,"UPDATE lms_answer SET lms_answer_a='$lms_answer_a' WHERE lms_answer_identify='$lms_answer_identify' and lms_answer_q='$lms_answer_q'");	
-}
-else{
+
+}else{
 mysqli_query($conn,"INSERT INTO lms_answer(lms_answer_identify, lms_answer_q, lms_answer_a) VALUES ('$lms_answer_identify','$lms_answer_q','$lms_answer_a')");
 }
+
 ?>

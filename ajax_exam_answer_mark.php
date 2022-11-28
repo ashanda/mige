@@ -14,4 +14,8 @@ mysqli_query($conn,"INSERT INTO
 lms_answer (lms_answer_id, lms_answer_user, lms_answer_paper, lms_answer_q, lms_answer_a)
 VALUES (NULL, '$user_id', '$_GET[paper]', '$_GET[q]', '$_GET[a]')");
 }
+
+
 ?>
+
+

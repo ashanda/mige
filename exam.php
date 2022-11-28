@@ -213,7 +213,7 @@ $q_count++;
 <?php
 }
 ?>
-<a href="results.php" class="btn btn-success submit-btn">Submit</a>
+<button onclick="print_id(<?php echo $user_id;?>)" class="btn btn-success submit-btn">Submit</button>
 
 </div>
 
@@ -267,6 +267,22 @@ function answer_mark(paper,q,a){
 	}
 	xhttp.open("GET", "ajax_exam_answer_mark.php?paper="+paper+"&q="+q+"&a="+a, true);
 	xhttp.send();
+}
+
+function print_id(user_id){
+	//console.log(paper+" "+q+" "+a);
+	const xhttp = new XMLHttpRequest();
+	xhttp.onload = function() {
+	//document.getElementById("demo").innerHTML = this.responseText;
+	}
+	xhttp.onreadystatechange = function() { // listen for state changes
+		if (xhttp.readyState == 4 && xhttp.status == 200) { // when completed we can move away
+			window.location = "results.php";
+		}
+		}
+	xhttp.open("GET", "print_id.php?user_id="+user_id, true);
+	xhttp.send();
+	
 }
 	
 </script>

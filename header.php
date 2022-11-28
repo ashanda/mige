@@ -66,6 +66,7 @@ include_once 'Config/Connection.php';?>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
 	<title>Fahrschule Star</title> 
 	<?php include_once 'gtag.php'; ?>
 	<style>

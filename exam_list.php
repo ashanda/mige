@@ -74,7 +74,7 @@ if(mysqli_num_rows($check_exam)>0){
 <a href="#" class="btn btn-success btn-sm">AllReady Take</a>
 	
 	
-<a href="results.php?view=<?php echo $exam_resalt['lms_exam_id']; ?>" style="color: white;" class="btn btn-success btn-sm">Aussicht</a>
+
 
 	
 <?php }else{ ?>

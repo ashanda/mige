@@ -183,7 +183,7 @@ while ($row = mysqli_fetch_array($result)) {
 		.notification .badge,
 		.notification-togle .badge {
 			position: absolute;
-			top: 0px;
+			top: 2px;
 			right: 125px;
 			padding: 5px 10px;
 			border-radius: 50%;
@@ -192,7 +192,7 @@ while ($row = mysqli_fetch_array($result)) {
 		}
 
 		.notification-togle .badge {
-			top: 10px;
+			top: 5px;
 			right: 35px;
 		}
 	</style>

@@ -175,12 +175,13 @@ while ($row = mysqli_fetch_array($result)) {
 		.notification {
 			position: relative;
 			display: inline-block;
+			width: 100%;
 		}
 
 		.notification .badge {
 			position: absolute;
-			top: -10px;
-			right: -10px;
+			top: 0px;
+			right: 20px;
 			padding: 5px 10px;
 			border-radius: 50%;
 			background-color: red;
@@ -194,10 +195,11 @@ while ($row = mysqli_fetch_array($result)) {
 		<div class="d-flex justify-content-between w-100">
 			<div class="header-designed"><a href="<?= $config['base_url'] ?>"><img alt="image" class="img-fluid" src="<?= $config['base_url'] ?>/include/images/logo.png"></a></div>
 
-			<div class="header-designed-2" onclick="myFunction(this)">
+			<div class="header-designed-2 notification" onclick="myFunction(this)">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
+				<span class="badge">3</span>
 			</div>
 		</div>
 

@@ -56,7 +56,7 @@ $reg_resalt=mysqli_fetch_array($reg_qury);
 
 
 $join_str="lms_exam_details INNER JOIN booked_course_history ON lms_exam_details.lms_exam_course=booked_course_history.course_id INNER JOIN tbl_course
-ON booked_course_history.course_id = tbl_course.course_id";
+ON booked_course_history.course_id = tbl_course.course_id LEFT JOIN tbl_exam_report ON tbl_exam_report.exam_report_paper = booked_course_history.course_id";
 $exam_qury=mysqli_query($conn,"SELECT * FROM $join_str WHERE user_id='$user_id'");
 
 while($exam_resalt=mysqli_fetch_array($exam_qury)){

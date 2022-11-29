@@ -1,5 +1,10 @@
 <?php session_start();
-include_once 'Config/Connection.php'; ?>
+include_once 'Config/Connection.php'; 
+
+global $conn;
+$user_id = $_SESSION['user_id'];
+?>
+
 <?php
 //$conn=new mysqli("localhost","root","","dharmani_fahrschuleweb") or die ("database not connected");  
 if (isset($_GET['language'])) {
@@ -207,7 +212,16 @@ while ($row = mysqli_fetch_array($result)) {
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
-				<span class="badge">new</span>
+				<?php 
+				$join_str="lms_exam_details INNER JOIN booked_course_history ON lms_exam_details.lms_exam_course=booked_course_history.course_id INNER JOIN tbl_course
+				ON booked_course_history.course_id = tbl_course.course_id LEFT JOIN tbl_exam_report ON tbl_exam_report.exam_report_paper = booked_course_history.course_id";
+				$exam_qury=mysqli_query($conn,"SELECT * FROM $join_str WHERE user_id='$user_id'");
+				$rowcount = mysqli_num_rows($exam_qury);
+				if($rowcount > 0){ ?>
+						<span class="badge">new</span>
+				<?php }
+				?>
+				
 			</div>
 		</div>
 
@@ -262,7 +276,8 @@ while ($row = mysqli_fetch_array($result)) {
 						</a>
 						<a class="select_li notification" href="<?= $config['base_url'] ?>/exam_list.php">
 							<li><?php echo $translations['_exam_title_']; ?></li>
-							<span class="badge">3</span>
+							
+							<span class="badge"><?php echo $rowcount;?></span>
 						</a>
 						<a class="select_li" href="<?= $config['base_url'] ?>/profile.php">
 							<li><?php echo $translation['_Profile_title_']; ?></li>

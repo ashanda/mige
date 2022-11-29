@@ -218,7 +218,7 @@ include_once 'Config/Connection.php';?>
 						
 						<a class="select_li" href="<?=$config['base_url']?>/reapply.php"><li><?php echo $translations['_reapply_title_'];?></li></a>
 						<a class="select_li" href="<?=$config['base_url']?>/exam_list.php"><li><?php echo $translations['_exam_title_'];?></li></a>
-
+<h1>test</h1>
 			            <a class="select_li" href="<?=$config['base_url']?>/profile.php"><li><?php echo $translation['_Profile_title_'];?></li></a>
 			            <a class="select_li" onclick="return confirm('<?=$translations['_logout_title_']?>')" href="<?=$config['base_url']?>/Logout.php"><li><?php echo $translation['_logout_title_'];?></li></a>
 			            <?php

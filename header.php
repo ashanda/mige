@@ -178,19 +178,22 @@ while ($row = mysqli_fetch_array($result)) {
 			width: 100%;
 		}
 
-		.notification-togle {
-
-		}
+		.notification-togle {}
 
 		.notification .badge,
-		.notification-togle .badge{
+		.notification-togle .badge {
 			position: absolute;
 			top: 0px;
-			right: 20px;
+			right: 125px;
 			padding: 5px 10px;
 			border-radius: 50%;
 			background-color: red;
 			color: white;
+		}
+
+		.notification-togle .badge {
+			top: 10px;
+			right: 35px;
 		}
 	</style>
 </head>
@@ -204,7 +207,7 @@ while ($row = mysqli_fetch_array($result)) {
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
-				<span class="badge">3</span>
+				<span class="badge">new</span>
 			</div>
 		</div>
 

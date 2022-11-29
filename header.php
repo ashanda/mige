@@ -182,7 +182,8 @@ while ($row = mysqli_fetch_array($result)) {
 
 		}
 
-		.notification .badge {
+		.notification .badge,
+		.notification-togle .badge{
 			position: absolute;
 			top: 0px;
 			right: 20px;
